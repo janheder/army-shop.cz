@@ -1,0 +1,127 @@
+doctype html
+include partials/_variables.pug  
+html(lang=lang)
+    include partials/_header.pug  
+    body
+        include partials/_navMain.pug
+        
+        section.o-cartNav
+            .container.o-cartNav__container
+                .o-cartNav__content
+                    a.o-cartNav__single.-complete(href="#")
+                        .o-cartNav__number 1
+                        .o-cartNav__title Nákupní košík
+                    .o-cartNav__single.-active
+                        .o-cartNav__number 2
+                        .o-cartNav__title Doprava a platba
+                    .o-cartNav__single
+                        .o-cartNav__number 3
+                        .o-cartNav__title Osobní údaje
+                    .o-cartNav__single
+                        .o-cartNav__number 4
+                        .o-cartNav__title Shrnutí objednávky
+
+
+        section.o-cartNavResponsive
+            a.o-cartNavResponsive__link.-prev(href="/kosik.html?krok=1")
+                span.a-icon.-cheveron.o-cartNavResponsive__icon
+            p.o-cartNavResponsive__title 2/4 Doprava a platba
+            a.o-cartNavResponsive__link.-next(onclick="$('#delivery-form-submit').trigger('click');")
+                span.a-icon.-cheveron.o-cartNavResponsive__icon
+
+        .a-cartNavResponsivePush
+
+        main
+            .container
+
+                .m-cartOverview
+                    .m-cartOverview__product(data-price="10000")
+                        .m-cartOverview__productSingle
+                            .m-cartOverview__productThumb
+                                img.m-cartOverview__productImg(src=URLbase+"img/product-thumb-small.jpg" at="#" title="#")
+                            .m-cartOverview__productNumber 2x
+
+                        .m-cartOverview__productSingle
+                            .m-cartOverview__productThumb
+                                img.m-cartOverview__productImg(src=URLbase+"img/product-thumb-small.jpg" at="#" title="#")
+                            .m-cartOverview__productNumber 2x
+
+                        .m-cartOverview__productSingle(data-toggle="tooltip" data-html="true" title="Produkt název<br>Produkt název<br>Produkt název" data-placement="right")
+                            .m-cartOverview__productThumb.-more
+                                .m-cartOverview__productImg +10
+                            .m-cartOverview__productNumber
+
+                    .m-cartOverview__plus 
+
+                    .m-cartOverview__shipping
+                        .m-cartOverview__shippingText Způsob dopravy a platby
+                        .m-cartOverview__shippingWrap
+                            .m-cartOverview__shippingTitle Nevybráno
+                            .m-cartOverview__shippingNumber
+
+
+                    .m-cartOverview__equals 
+
+                    .m-cartOverview__price
+                        .m-cartOverview__priceText Celková cena s DPH
+                        .m-cartOverview__priceTitle 10 000 Kč
+
+
+
+
+                form.o-cartDeliveryForm(method="post" action="" name="delivery_form" id="delivery_form")
+                    h1.o-cartDeliveryForm__title Výběr dopravy a platby
+
+                    .o-form__group.m-formGroup.-radiobutton.-cart
+                        input.m-formGroup__input(type="radio" name="doprava" id="doprava1")
+                        span.m-formGroup__radiobutton.a-radiobutton
+                        label.m-formGroup__label(for="doprava1") DOBÍRKA - ČESKÁ POŠTA - BALÍK DO RUKY           
+                        .m-formGroup__cartPrice 130 Kč
+
+                    .o-form__group.m-formGroup.-radiobutton.-cart
+                        input.m-formGroup__input(type="radio" name="doprava" id="doprava2")
+                        span.m-formGroup__radiobutton.a-radiobutton
+                        label.m-formGroup__label(for="doprava2") DOBÍRKA - ČESKÁ POŠTA - BALÍK DO RUKY           
+                        .m-formGroup__cartPrice 130 Kč             
+
+                    .o-form__group.m-formGroup.-radiobutton.-cart
+                        input.m-formGroup__input(type="radio" name="doprava" id="doprava3")
+                        span.m-formGroup__radiobutton.a-radiobutton
+                        label.m-formGroup__label(for="doprava3") DOBÍRKA - ČESKÁ POŠTA - BALÍK DO RUKY           
+                        .m-formGroup__cartPrice 130 Kč
+
+                    br
+
+                    .o-form__group.m-formGroup.-radiobutton.-cart
+                        input.m-formGroup__input(type="radio" name="doprava" id="doprava4")
+                        span.m-formGroup__radiobutton.a-radiobutton
+                        label.m-formGroup__label(for="doprava4") DOBÍRKA - ČESKÁ POŠTA - BALÍK DO RUKY           
+                        .m-formGroup__cartPrice 130 Kč
+
+                    .o-form__group.m-formGroup.-radiobutton.-cart
+                        input.m-formGroup__input(type="radio" name="doprava" id="doprava5")
+                        span.m-formGroup__radiobutton.a-radiobutton
+                        label.m-formGroup__label(for="doprava5") DOBÍRKA - ČESKÁ POŠTA - BALÍK DO RUKY           
+                        .m-formGroup__cartPrice 130 Kč             
+
+                    .o-form__group.m-formGroup.-radiobutton.-cart
+                        input.m-formGroup__input(type="radio" name="doprava" id="doprava6")
+                        span.m-formGroup__radiobutton.a-radiobutton
+                        label.m-formGroup__label(for="doprava6") DOBÍRKA - ČESKÁ POŠTA - BALÍK DO RUKY           
+                        .m-formGroup__cartPrice 130 Kč
+                
+                    .m-cartButtons
+                        a.btn.-dark(href="#") Krok zpět
+                        button.btn.-secondary(type="submit" id="delivery-form-submit") Osobní údaje #[span.a-btnIcon #[span.a-icon.-cheveron.-white]]
+
+                        
+            .m-cartBarResponsive
+                .m-cartBarResponsive__priceWrap
+                    p.m-cartBarResponsive__text Celková cena s DPH
+                    h3.m-cartBarResponsive__price #[span 65 599] Kč
+                .m-cartBarResponsive__btnWrap
+                    button.btn.-secondary.m-cartBarResponsive__btn(onclick="$('#delivery-form-submit').trigger('click');") Osobní údaje #[span.a-btnIcon #[span.a-icon.-cheveron.-white]] 
+
+        include partials/_footer.pug
+
+        include partials/_js-include.pug

@@ -1,0 +1,120 @@
+.o-cartNav{
+    background: $bg-white;
+    padding: 20px 0;
+}
+.o-cartNav__container{
+    display: flex;
+    flex-direction: row;
+}
+.o-cartNav__content{
+    margin: 0 -10px;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+.o-cartNav__single{
+    background: $bg-light;
+    position: relative;
+    height: 80px;
+    flex-basis: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    margin: 0 10px;
+
+    &::after{
+        content: "";
+        height: 10px;
+        width: 20px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateX(100%) translateY(-50%);
+        background: $bg-light;
+    }
+    &:last-child::after{
+        content: none;
+    }
+}
+.o-cartNav__title{
+    @include f-16-primary-medium;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+.o-cartNav__number{
+    @include f-16-primary-medium;
+    border-radius: 0;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,1);
+    z-index: 2;
+}
+
+.o-cartNav__single.-active{
+    background: $bg-brand;
+    &::after{
+        content: "";
+        height: 10px;
+        width: 20px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateX(100%) translateY(-50%);
+        background: $bg-brand;
+    }
+    .o-cartNav__title{
+        color: $text-white;
+    }
+    .o-cartNav__number{
+        color: $text-white;
+        background: rgba(0,0,0,0.1);
+    }
+    &:last-child::after{
+        content: none;
+    }
+}
+.o-cartNav__single.-complete{
+    background: $bg-primary;
+    &::after{
+        content: "";
+        height: 10px;
+        width: 20px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateX(100%) translateY(-50%);
+        background: $bg-primary;
+    }
+    .o-cartNav__title{
+        color: $text-white;
+    }
+    .o-cartNav__number{
+        color: $text-white;
+        background: rgba(0,0,0,0.1);
+    }
+    &:hover, &:active, &:focus{
+        text-decoration: none;
+        .o-cartNav__title{
+            color: $text-white;
+        }
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 991px){
+    .o-cartNav{
+        display: none;
+    }
+}

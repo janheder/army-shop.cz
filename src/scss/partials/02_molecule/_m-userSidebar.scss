@@ -1,0 +1,56 @@
+.m-userSidebar{
+    background: $bg-primary;
+    border-radius: $border-radius-primary;
+    overflow: hidden;
+}
+.m-userSidebar__top{
+    background: $bg-primary;
+    padding: 3rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.m-userSidebar__img{
+    height: 60px;
+    margin-bottom: 3rem;
+}
+.m-userSidebar__title{
+    @include f-24-white-medium;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+.m-userSidebar__bottom{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+.m-userSidebar__link{
+    padding: 0 2rem;
+    @include f-16-white-medium;
+    height: 6rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    text-align: center;
+    border-right: 1px solid rgba(255,255,255,0.1);
+
+    &:hover, &:active, &:focus{
+        text-decoration: none;
+        color: $text-brand;
+    }
+    span{
+        margin-right: 10px;
+        height: 14px;
+    }
+    &.-active{
+        color: $text-brand;
+        background: $bg-white;
+    }
+}
+
+@media screen and (max-width:991px){
+    .m-userSidebar{
+        display: none;
+    }
+}
