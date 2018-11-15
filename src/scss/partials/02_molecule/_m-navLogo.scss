@@ -20,10 +20,11 @@
 @media screen and (max-width:991px){
     .m-navLogo{
         padding: 0 0 0 10px;
-        flex-grow: 1;
+        border: 0;
     }
     .m-navLogo__link{
         justify-content: flex-start;
+        height: 40px;
     }
 }
 @media screen and (max-width:500px){

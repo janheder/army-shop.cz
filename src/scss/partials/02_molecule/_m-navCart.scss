@@ -86,7 +86,7 @@
 
 .m-navCart__collapse{
     position: absolute;
-    top: 100%;
+    top: 72px;
     right: 0;
     background: $bg-white;
     box-shadow: $box-shadow-primary;
@@ -198,6 +198,7 @@
         height: 100vh;
         z-index: 8;
         overflow-y: auto;
+        top: 56px;
         
         &.show{
             transform: translateX(0%); 

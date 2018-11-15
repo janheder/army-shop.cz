@@ -22,12 +22,12 @@
     align-items: center;
     padding: 20px;
     border: 0;
-    background: $bg-light;
+    background: $bg-primary;
     border-top-left-radius: $border-radius-primary;
     border-top-right-radius: $border-radius-primary;
 }
 .o-modal__title{
-    @include f-24-primary-medium;
+    @include f-24-white-medium;
 }
 .modal-header .close{
     padding: 0;
@@ -49,6 +49,10 @@
     background: $bg-white;
     border-bottom-left-radius: $border-radius-primary;
     border-bottom-right-radius: $border-radius-primary;
+
+    &.-product{
+        padding: 20px;
+    }
 }
 .o-modal__footer{
     display: flex;

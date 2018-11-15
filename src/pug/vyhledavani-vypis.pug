@@ -5,13 +5,10 @@ html(lang=lang)
     body
         include partials/_navMain.pug
 
-        section.o-pageHeading.b-bgCover__wrap
-            include partials/_breadcrumb-transparent.pug
+        section.o-pageHeading.-light.b-bgCover__wrap
+            include partials/_breadcrumb.pug
             .container.o-pageHeading__container
-                h1.o-pageHeading__title.-search Výsledky vyhledávání pro výraz: "postel"
-
-            img.lazy.o-pageHeading__img.b-bgCover__img(src=URLbase+"img/lazy/category-thumb-large.jpg" data-src=URLbase+"img/category-thumb-large.jpg" alt="#" title="#")
-        
+                h1.o-pageHeading__title Výsledky vyhledávání pro výraz: "postel"
         main
             .container
 

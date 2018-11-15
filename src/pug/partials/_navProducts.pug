@@ -25,43 +25,61 @@ nav.o-navProducts(id="js-navProducts")
 	.accordion.o-navProducts__accordion(id="accordionProducts")
 
 		.o-navProducts__item
-			.o-navProducts__link(id="headingProducts-1" data-toggle="collapse" data-target="#collapseProducts-1" aria-expanded="false" aria-controls="collapseProducts-1") Akční nabídka
-			a.o-navProducts__linkDesktop(href="#") Akční nabídka
+			.o-navProducts__link(id="headingProducts-1" data-toggle="collapse" data-target="#collapseProducts-1" aria-expanded="false" aria-controls="collapseProducts-1") Oblečení a obuv
+			a.o-navProducts__linkDesktop(href="#") Oblečení a obuv
 			.collapse.o-navProducts__collapse(id="collapseProducts-1" aria-labelledby="headingProducts-1" data-parent="#accordionProducts")
 
 				.o-navProducts__subCategoryWrap
 					- for (var i=0; i<12; i++)
-						a.o-navProducts__subCategory(href="#")
+						.o-navProducts__subCategory
 							img.o-navProducts__subCategoryImg(src=URLbase+"img/product-thumb-small.jpg")
-							span.o-navProducts__subCategoryText(href="#") Postele
+							a.o-navProducts__subCategoryText(href="#") Oblečení a obuv
+							a.o-navProducts__subCategorySubText(href="#") Oblečení
+							a.o-navProducts__subCategorySubText(href="#") Oblečení
+							a.o-navProducts__subCategorySubText(href="#") Oblečení
+							a.o-navProducts__subCategorySubText(href="#") Oblečení
+							a.o-navProducts__subCategorySubText(href="#") Oblečení
 
 
 		.o-navProducts__item
-			.o-navProducts__link(id="headingProducts-2" data-toggle="collapse" data-target="#collapseProducts-2" aria-expanded="false" aria-controls="collapseProducts-2") Matrace 
-			a.o-navProducts__linkDesktop(href="#") Postele
+			.o-navProducts__link(id="headingProducts-2" data-toggle="collapse" data-target="#collapseProducts-2" aria-expanded="false" aria-controls="collapseProducts-2") Oblečení a obuv 
+			a.o-navProducts__linkDesktop(href="#") Oblečení a obuv
 			.collapse.o-navProducts__collapse(id="collapseProducts-2" aria-labelledby="headingProducts-2" data-parent="#accordionProducts")
 
 				.o-navProducts__subCategoryWrap
 					- for (var i=0; i<8; i++)
-						a.o-navProducts__subCategory(href="#")
+						.o-navProducts__subCategory
 							img.o-navProducts__subCategoryImg(src=URLbase+"img/product-thumb-small.jpg")
-							span.o-navProducts__subCategoryText(href="#") Postele
+							a.o-navProducts__subCategoryText(href="#") Oblečení a obuv
+							a.o-navProducts__subCategorySubText(href="#") Oblečení
+							a.o-navProducts__subCategorySubText(href="#") Oblečení
+							a.o-navProducts__subCategorySubText(href="#") Oblečení
+							a.o-navProducts__subCategorySubText(href="#") Oblečení
+							a.o-navProducts__subCategorySubText(href="#") Oblečení
 
 		.o-navProducts__item
-			.o-navProducts__link(id="headingProducts-3" data-toggle="collapse" data-target="#collapseProducts-3" aria-expanded="false" aria-controls="collapseProducts-3") Postele
-			a.o-navProducts__linkDesktop(href="#") Postele
+			.o-navProducts__link(id="headingProducts-3" data-toggle="collapse" data-target="#collapseProducts-3" aria-expanded="false" aria-controls="collapseProducts-3") Oblečení a obuv
+			a.o-navProducts__linkDesktop(href="#") Oblečení a obuv
 			.collapse.o-navProducts__collapse(id="collapseProducts-3" aria-labelledby="headingProducts-3" data-parent="#accordionProducts")
 
 				.o-navProducts__subCategoryWrap
 					- for (var i=0; i<12; i++)
-						a.o-navProducts__subCategory(href="#")
+						.o-navProducts__subCategory
 							img.o-navProducts__subCategoryImg(src=URLbase+"img/product-thumb-small.jpg")
-							span.o-navProducts__subCategoryText(href="#") Postele
+							a.o-navProducts__subCategoryText(href="#") Oblečení a obuv
+							a.o-navProducts__subCategorySubText(href="#") Oblečení
+							a.o-navProducts__subCategorySubText(href="#") Oblečení
+							a.o-navProducts__subCategorySubText(href="#") Oblečení
+							a.o-navProducts__subCategorySubText(href="#") Oblečení
+							a.o-navProducts__subCategorySubText(href="#") Oblečení
 
 		.o-navProducts__item
-			a.o-navProducts__link(href="#") Postele
-			a.o-navProducts__linkDesktop(href="#") Postele
+			a.o-navProducts__link.-green(href="#") Akční nabídka
+			a.o-navProducts__linkDesktop.-green(href="#") Akční nabídka
 
+		.o-navProducts__item
+			a.o-navProducts__link.-yellow(href="#") Novinky
+			a.o-navProducts__linkDesktop.-yellow(href="#") Novinky
 
 .m-navProductsClose(id="js-navProductsClose")
 	span.a-icon.-cross.-white

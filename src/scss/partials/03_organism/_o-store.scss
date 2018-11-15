@@ -1,0 +1,22 @@
+.o-store{
+    background: $bg-light;
+}
+.o-store__single{
+
+}
+.o-store__singleImgWrap{
+    height: 320px;
+}
+.o-store__title{
+
+}
+.o-store__infoWrap{
+    display: flex;
+    flex-direction: row;
+}
+.o-store__text{
+    flex-grow: 1;
+}
+.o-store__link{
+    text-transform: uppercase;
+}

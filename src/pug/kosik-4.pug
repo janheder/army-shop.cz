@@ -109,17 +109,21 @@ html(lang=lang)
                             .col-12.col-sm-6.col-md-4.o-cartUserOverview__col
                                 .o-cartUserOverview__item.m-cartUserItem.-active
                                     .m-cartUserItem__top
-                                        .m-cartUserItem__iconWrap
-                                            span.a-icon.-user.-white.m-cartUserItem__icon
-                                        .m-cartUserItem_title Petr Novák
-                                        .m-cartUserItem_subtitleWrap
-                                            .m-cartUserItem_subtitle petrnovak@seznam.cz
-                                            .m-cartUserItem_subtitle (+420) 605 598 989
+                                        .m-cartUserItem_title Osobní údaje
                                             
                                     .m-cartUserItem__bottom
                                         .m-cartUserItem__street
-                                            .m-cartUserItem__small Ulice
-                                            .m-cartUserItem__text Petra Bezruče, 18
+                                            .m-cartUserItem__small Jméno a příjmení
+                                            .m-cartUserItem__text Petr Novák
+                                        .m-cartUserItem__street
+                                            .m-cartUserItem__small Email
+                                            .m-cartUserItem__text petrnovak@seznam.cz
+                                        .m-cartUserItem__street
+                                            .m-cartUserItem__small Email
+                                            .m-cartUserItem__text petrnovak@seznam.cz
+                                        .m-cartUserItem__street
+                                            .m-cartUserItem__small Telefon
+                                            .m-cartUserItem__text (+420) 605 598 989
                                         .m-cartUserItem__row
                                             .m-cartUserItem__city
                                                 .m-cartUserItem__small Město/obec
@@ -132,14 +136,15 @@ html(lang=lang)
                             .col-12.col-sm-6.col-md-4.o-cartUserOverview__col
                                 .o-cartUserOverview__item.m-cartUserItem
                                     .m-cartUserItem__top
-                                        .m-cartUserItem__iconWrap
-                                            span.a-icon.-address.-white.m-cartUserItem__icon
                                         .m-cartUserItem_title Fakturační adresa
-                                        .m-cartUserItem_subtitleWrap
-                                            .m-cartUserItem_subtitle Petr Novák
-                                            .m-cartUserItem_subtitle Název firmy s.r.o.
                                             
                                     .m-cartUserItem__bottom
+                                        .m-cartUserItem__street
+                                            .m-cartUserItem__small Jméno a příjmení
+                                            .m-cartUserItem__text Petr Novák
+                                        .m-cartUserItem__street
+                                            .m-cartUserItem__small Název firmy
+                                            .m-cartUserItem__text abcd
                                         .m-cartUserItem__row
                                             .m-cartUserItem__city
                                                 .m-cartUserItem__small IČO
@@ -162,14 +167,15 @@ html(lang=lang)
                             .col-12.col-sm-6.col-md-4.o-cartUserOverview__col
                                 .o-cartUserOverview__item.m-cartUserItem
                                     .m-cartUserItem__top
-                                        .m-cartUserItem__iconWrap
-                                            span.a-icon.-home.-white.m-cartUserItem__icon
                                         .m-cartUserItem_title Dodací adresa
-                                        .m-cartUserItem_subtitleWrap
-                                            .m-cartUserItem_subtitle Petr Novák
-                                            .m-cartUserItem_subtitle Název firmy s.r.o.
                                             
                                     .m-cartUserItem__bottom
+                                        .m-cartUserItem__street
+                                            .m-cartUserItem__small Jméno a příjmení
+                                            .m-cartUserItem__text Petr Novák
+                                        .m-cartUserItem__street
+                                            .m-cartUserItem__small Název firmy
+                                            .m-cartUserItem__text abcd
                                         .m-cartUserItem__street
                                             .m-cartUserItem__small Ulice
                                             .m-cartUserItem__text Petra Bezruče, 18
@@ -180,6 +186,13 @@ html(lang=lang)
                                             .m-cartUserItem__psc
                                                 .m-cartUserItem__small PSČ
                                                 .m-cartUserItem__text 187 98 
+                    .o-cartUsefNotes
+                        h2.o-cartUsefNotes__title
+                        .o-form__group.m-formGroup.-textarea
+                            textarea.m-formGroup__input(name="question_form_text2" id="question_form_text2" rows="4" placeholder=" ")
+                            label.m-formGroup__label(for="question_form_text2") Text poznámky
+                            span.m-formGroup__error Neplatný text
+                            span.m-formGroup__success
 
                     .o-cartUsefInfo
                         .o-form.o-cartUsefInfo__form

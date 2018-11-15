@@ -16,6 +16,12 @@
         .o-pageHeading__title{
             @include f-48-primary-bold;
         }
+        .m-breadcrumb{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
     }
 }
 .o-pageHeading__container{
