@@ -1,7 +1,8 @@
 .o-filter{
-    background: $bg-white;
+    background: transparent;
     position: relative;
     padding: 0;
+    margin-bottom: -34px;
 }
 .o-filter__responsive{
     display: none;
@@ -113,6 +114,8 @@
         width: 100%;
         border: 0;
         transition: 0.3s ease all;
+        background: $bg-white;
+        margin: 0;
 
         &.-active{
             transform: translate(0%);

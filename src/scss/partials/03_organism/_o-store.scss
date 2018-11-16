@@ -8,7 +8,12 @@
     height: 320px;
 }
 .o-store__title{
-
+    @include f-18-primary-medium;
+    text-transform: uppercase;
+    margin: 1rem 0 0.5rem 0;
+}
+.o-store__text{
+    @include f-16-primary-medium;
 }
 .o-store__infoWrap{
     display: flex;
@@ -19,4 +24,22 @@
 }
 .o-store__link{
     text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .a-icon{
+        height: 10px;
+        margin-left: 5px;
+        margin-top: -2px;
+    }
+}
+@media screen and (max-width:991px){
+    .o-store__single:first-child{
+        margin-bottom: 20px;
+    }
+    .o-store__singleImgWrap{
+        height: 260px;
+    }
 }

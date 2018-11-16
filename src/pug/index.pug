@@ -85,7 +85,31 @@ html(lang=lang)
                                             .m-heroCarousel__btn
                                                 span.btn Více informací
                                             .swiper-pagination.swiper-pagination-white.swiper-pagination-clickable.swiper-pagination-bullets.m-heroCarousel__pagination
-                                            
+
+        section.o-sectionPoints
+            .container.o-sectionPoints__container
+                .o-sectionPoints__single
+                    .o-sectionPoints__imgWrap
+                        img.o-sectionPoints__img(src=URLbase+"img/stock.svg" alt="" title="")
+                    .o-sectionPoints__titleWrap
+                        h5.o-sectionPoints__title 9999 PRODUKTŮ SKLADEM
+                        p.o-sectionPoints__text A NA 2 KAMENÝCH PRODEJNÁCH
+
+                .o-sectionPoints__single
+                    .o-sectionPoints__imgWrap
+                        img.o-sectionPoints__img(src=URLbase+"img/stock.svg" alt="" title="")
+                    .o-sectionPoints__titleWrap
+                        h5.o-sectionPoints__title DOPRAVA ZDARMA
+                        p.o-sectionPoints__text PŘI NÁKUPU NAD 2 000 Kč
+
+                .o-sectionPoints__single
+                    .o-sectionPoints__imgWrap
+                        img.o-sectionPoints__img(src=URLbase+"img/stock.svg" alt="" title="")
+                    .o-sectionPoints__titleWrap
+                        h5.o-sectionPoints__title VÍCE JAK 26 LET EXISTENCE
+                        p.o-sectionPoints__text PRODÁVÁME JIŽ VÍCE JAK 26 LET
+
+
         section.o-sectionSale
             .container
                 h1.o-sectionSale__title Akční nabídka
@@ -179,13 +203,26 @@ html(lang=lang)
 
         section.o-store
             .container
-                .o-store__single
-                    .o-store__singleImgWrap.b-bgCover__wrap
-                        img.o-store__singleImgWrap.b-bgCover__img(src=URLbase+"img/prodejna1.jpg" alt="" title="")
-                    .o-store__title Ostrava - Vítkovice
-                    .o-store__infoWrap
-                        p.o-store__text ul. Rudná čp. 1117/30a
-                        a.o-store__link(href="#") Více informací #[span.a-icon.-cheveron]
+                h1 Vybrané kategorie
+                .row
+                    .col-12.col-md-6
+                        .o-store__single
+                            .o-store__singleImgWrap.b-bgCover__wrap
+                                img.o-store__singleImgWrap.b-bgCover__img(src=URLbase+"img/prodejna1.jpg" alt="" title="")
+                            .o-store__title Ostrava - Vítkovice
+                            .o-store__infoWrap
+                                p.o-store__text ul. Rudná čp. 1117/30a
+                                a.o-store__link(href="#") Více informací #[span.a-icon.-cheveron.-green]
+                                
+                    .col-12.col-md-6
+                        .o-store__single
+                            .o-store__singleImgWrap.b-bgCover__wrap
+                                img.o-store__singleImgWrap.b-bgCover__img(src=URLbase+"img/prodejna2.jpg" alt="" title="")
+                            .o-store__title Frýdek - Místek
+                            .o-store__infoWrap
+                                p.o-store__text Náměstí Svobody č.3
+                                a.o-store__link(href="#") Více informací #[span.a-icon.-cheveron.-green]
+
 
         include partials/_footer.pug
 

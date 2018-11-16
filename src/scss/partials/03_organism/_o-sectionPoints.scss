@@ -1,0 +1,45 @@
+.o-sectionPoints{
+    background: $bg-white;
+    padding: 4rem 0;
+}
+.o-sectionPoints__container{
+    display: flex;
+    flex-direction: row;
+}
+.o-sectionPoints__single{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 1;
+}
+.o-sectionPoints__imgWrap{
+    background: $bg-brand;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 48px;
+}
+.o-sectionPoints__img{
+    height: 24px;
+}
+.o-sectionPoints__titleWrap{
+    margin-left: 20px;
+}
+.o-sectionPoints__title{
+    @include f-18-primary-medium;
+    margin: 0;
+
+}
+.o-sectionPoints__text{
+    @include f-15-primary-medium;
+    margin: 0;
+}
+
+
+@media screen and (max-width: 991px){
+    .o-sectionPoints{
+        display: none;
+    }  
+}

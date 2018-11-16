@@ -104,6 +104,7 @@
 }
 .m-heroCarousel__description{
     @include f-18-white-regular;
+    height: 54px;
 }
 .m-heroCarousel__btn{
     margin-top: 4rem;
@@ -130,6 +131,23 @@
 @media screen and (max-width: 991px){
     .m-heroCarousel{
         height: 300px;
+    }
+    .m-heroCarousel__figure .container{
+        padding: 0;
+    }
+    .m-heroCarousel__caption{
+        width: 100%;
+        padding: 40px 40px;
+    }
+    .m-heroCarousel__title{
+        font-size: 3rem;
+    }
+    .m-heroCarousel__description{
+        @include f-18-white-regular;
+        height: 44px;
+    }
+    .m-heroCarousel__btn{
+        margin-top: 2rem;
     }
 }
 

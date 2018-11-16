@@ -6,6 +6,7 @@ html(lang=lang)
         include partials/_navMain.pug
         include partials/_modal-add-to-cart.pug
         include partials/_modal-contact.pug
+        include partials/_modal-stock.pug
         include partials/_breadcrumb.pug
         section.o-productDetail
             .container
@@ -80,7 +81,7 @@ html(lang=lang)
                                     a.m-socialShare__link(href="https://plus.google.com/share?url=[URL]" target="_blank") #[span.a-icon.-googlePlus.m-socialShare__icon]
 
                             h5.m-productDetailMain__subtitle POPIS PRODUKTU
-                            p.m-productDetailMain__description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. #[a(href="#anchor-product-detail-description") Celý popis produktu]
+                            p.m-productDetailMain__description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. #[a(href="#anchor-product-detail-description") Celý popis produktu]
                             
                             h5.m-productDetailMain__subtitle VÝBĚR VARIANTY
                             form.m-productDetailMain__form(method="post" name="product_detail_form" id="product_detail_form")
@@ -105,6 +106,12 @@ html(lang=lang)
                                         .swiper-button-prev.m-productVariation__swiperButton.-prev
                                         .swiper-button-next.m-productVariation__swiperButton.-next
 
+
+                                .m-productDetailMain__stock
+                                    img.m-productDetailMain__stockImg(src=URLbase+"img/truck-green.svg" alt="" title="")
+                                    .m-productDetailMain__stockTextWrap
+                                        .m-productDetailMain__stockText Skladem 5 kusů (u vás 2-10 dnů)
+                                        span.m-productDetailMain__stockLink(data-toggle="modal" data-target="#modal-stock") Více informací
 
 
                                 .m-productDetailMain__cta

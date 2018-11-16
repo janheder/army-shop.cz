@@ -4,12 +4,10 @@
     padding: 20px 0;
 }
 .m-contactItem__title{
-    background: $bg-dark;
-    @include f-18-white-medium;
+    background: transparent;
+    @include f-24-primary-medium;
     padding: 15px 20px;
     margin: 0;
-    border-top-right-radius: $border-radius-primary;
-    border-top-left-radius: $border-radius-primary;
 }
 .m-contactItem_content{
     padding: 20px;

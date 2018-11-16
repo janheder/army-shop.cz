@@ -312,6 +312,37 @@
         </div>
       </div>
     </div>
+    <div class="modal fade o-modal -wide" id="modal-stock" tabindex="-1" role="dialog" aria-labelledby="modal-stock-heading" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered o-modal__dialog" role="document">
+        <div class="modal-content o-modal__content">
+          <div class="modal-header o-modal__header">
+            <h5 class="modal-title o-modal__title" id="modal-stock-heading">Dostupnost produktu</h5>
+            <button class="o-modal__close close" type="button" data-dismiss="modal" aria-label="Close"><span class="a-icon -cross -white o-modal__closeIcon"></span></button>
+          </div>
+          <div class="modal-body o-modal__body">
+            <table class="table table-striped">
+              <tr>
+                <td>SKLAD</td>
+                <td>1 ks</td>
+              </tr>
+              <tr>
+                <td>Prodejna Frýdek-Místek</td>
+                <td>1 ks</td>
+              </tr>
+              <tr>
+                <td>Prodejna Ostrava</td>
+                <td>1 ks</td>
+              </tr>
+            </table>
+            <div class="m-alert -danger">Celkový počet kusů "SKLADEM K ODESLÁNÍ" znamená, že zboží je v uvedeném počtu možno expedovat ihned přes e-shop. Více kusů s dodáním 2-10 dnů.</div>
+            <div class="m-alert -danger">Termín "DODÁNÍ" uvedený v závorce znamená, že Vám zboží po objednání do této doby dodáme.</div>
+          </div>
+          <div class="modal-footer o-modal__footer">
+            <button class="btn -secondary" type="button" data-dismiss="modal">Zavřít</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <nav class="m-breadcrumb">
       <div class="container m-breadcrumb__container"><a class="m-breadcrumb__item" href="#">Lorem ipsum</a><a class="m-breadcrumb__item" href="#">Dolor sit amet</a><a class="m-breadcrumb__item" href="#">Lorem ipsum</a><span class="m-breadcrumb__item active">Lorem ipsum</span></div>
     </nav>
@@ -473,7 +504,7 @@
                 </div>
               </div>
               <h5 class="m-productDetailMain__subtitle">POPIS PRODUKTU</h5>
-              <p class="m-productDetailMain__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. <a href="#anchor-product-detail-description">Celý popis produktu</a></p>
+              <p class="m-productDetailMain__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a href="#anchor-product-detail-description">Celý popis produktu</a></p>
               <h5 class="m-productDetailMain__subtitle">VÝBĚR VARIANTY</h5>
               <form class="m-productDetailMain__form" method="post" name="product_detail_form" id="product_detail_form">
                 <div class="m-productDetailMain__variations m-productVariation">
@@ -536,6 +567,11 @@
                     </div>
                     <div class="swiper-button-prev m-productVariation__swiperButton -prev"></div>
                     <div class="swiper-button-next m-productVariation__swiperButton -next"></div>
+                  </div>
+                </div>
+                <div class="m-productDetailMain__stock"><img class="m-productDetailMain__stockImg" src="img/truck-green.svg" alt="" title="">
+                  <div class="m-productDetailMain__stockTextWrap">
+                    <div class="m-productDetailMain__stockText">Skladem 5 kusů (u vás 2-10 dnů)</div><span class="m-productDetailMain__stockLink" data-toggle="modal" data-target="#modal-stock">Více informací</span>
                   </div>
                 </div>
                 <div class="m-productDetailMain__cta">
