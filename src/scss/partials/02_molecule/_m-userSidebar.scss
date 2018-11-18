@@ -2,6 +2,11 @@
     background: $bg-primary;
     border-radius: $border-radius-primary;
     overflow: hidden;
+
+    .nav-tabs{
+        border: 0;
+        width: 100%;
+    }
 }
 .m-userSidebar__top{
     background: $bg-primary;
@@ -47,8 +52,14 @@
         color: $text-brand;
         background: $bg-white;
     }
+    &.active{
+        color: $text-brand;
+        background: $bg-white;
+    }
 }
-
+.tab-pane  .o-form{
+    margin: 0;
+}
 @media screen and (max-width:991px){
     .m-userSidebar{
         display: none;

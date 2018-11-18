@@ -69,18 +69,46 @@
             <h5 class="modal-title o-modal__title" id="modal-login-heading">Přihlášení</h5>
             <button class="o-modal__close close" type="button" data-dismiss="modal" aria-label="Close"><span class="a-icon -cross -white o-modal__closeIcon"></span></button>
           </div>
+          <div class="m-userSidebar">
+            <div class="m-userSidebar__bottom">
+              <div class="nav nav-tabs" role="tablist"><a class="m-userSidebar__link active" id="index-1-tab" data-toggle="tab" href="#index-1" role="tab" aria-controls="index-1" aria-selected="false">Zákazník</a><a class="m-userSidebar__link" id="index-2-tab" data-toggle="tab" href="#index-2" role="tab" aria-controls="index-2" aria-selected="false">Velkoobchod </a></div>
+            </div>
+          </div>
           <div class="modal-body o-modal__body">
-            <form class="o-form" method="post" action="" name="login_form">
-              <div class="o-form__group m-formGroup">
-                <input class="m-formGroup__input" type="email" name="login_form_email" id="login_form_email" autocomplete="email" required placeholder=" ">
-                <label class="m-formGroup__label" for="login_form_email">Emailová adresa</label><span class="m-formGroup__error">Neplatný email</span><span class="m-formGroup__success"></span>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="index-1" role="tabpanel" aria-labelledby="index-1-tab"> 
+                <form class="o-form login-form" method="post" action="" name="login_form">
+                  <div class="m-alert -danger">Zadali jste špatné údaje</div>
+                  <h2 class="o-form__title">Přihlášení</h2>
+                  <p class="o-form__text">Jako registrovaný uživatel získává slevu ve výši 1% na veškeré zboží, které není aktuálně ve slevě. </p>
+                  <div class="o-form__group m-formGroup">
+                    <input class="m-formGroup__input" type="email" name="login_form_email" id="login_form_email" autocomplete="email" required placeholder=" ">
+                    <label class="m-formGroup__label" for="login_form_email">Uživatelské jméno</label><span class="m-formGroup__error">Neplatné uživatelské jméno</span><span class="m-formGroup__success"></span>
+                  </div>
+                  <div class="o-form__group m-formGroup">
+                    <input class="m-formGroup__input" type="password" name="login_form_password" id="login_form_password" autocomplete="password" required placeholder=" ">
+                    <label class="m-formGroup__label" for="login_form_password">Heslo</label><span class="m-formGroup__error">Neplatné heslo</span><span class="m-formGroup__success"></span>
+                  </div>
+                  <button class="btn -secondary -fullWidth" type="submit" id="login_form_submit">Přihlásit se</button><a class="o-form__link -alt" href="#">Vytvořit účet</a><a class="o-form__link" href="#">Obnovit zapomenuté heslo</a>
+                </form>
               </div>
-              <div class="o-form__group m-formGroup">
-                <input class="m-formGroup__input" type="password" name="login_form_pass" id="login_form_pass" autocomplete="password" required placeholder=" ">
-                <label class="m-formGroup__label" for="login_form_name">Heslo</label><span class="m-formGroup__error">Neplatné heslo</span><span class="m-formGroup__success"></span>
+              <div class="tab-pane fade" id="index-2" role="tabpane2" aria-labelledby="index-2-tab"> 
+                <form class="o-form login-form" method="post" action="" name="login_form">
+                  <div class="m-alert -danger">Zadali jste špatné údaje</div>
+                  <h2 class="o-form__title">Přihlášení</h2>
+                  <p class="o-form__text">Jako registrovaný uživatel získává slevu ve výši 1% na veškeré zboží, které není aktuálně ve slevě. </p>
+                  <div class="o-form__group m-formGroup">
+                    <input class="m-formGroup__input" type="email" name="login_form_email2" id="login_form_email2" autocomplete="email" required placeholder=" ">
+                    <label class="m-formGroup__label" for="login_form_email2">Uživatelské jméno</label><span class="m-formGroup__error">Neplatné uživatelské jméno</span><span class="m-formGroup__success"></span>
+                  </div>
+                  <div class="o-form__group m-formGroup">
+                    <input class="m-formGroup__input" type="password" name="login_form_password2" id="login_form_password2" autocomplete="password" required placeholder=" ">
+                    <label class="m-formGroup__label" for="login_form_password2">Heslo</label><span class="m-formGroup__error">Neplatné heslo</span><span class="m-formGroup__success"></span>
+                  </div>
+                  <button class="btn -secondary -fullWidth" type="submit" id="login_form_submit2">Přihlásit se</button><a class="o-form__link -alt" href="#">Vytvořit účet</a><a class="o-form__link" href="#">Obnovit zapomenuté heslo</a>
+                </form>
               </div>
-              <button class="btn -fullWidth" type="submit" name="login_form_submit" id="login_form_submit">Přihlásit</button><a class="o-form__link -alt" href="#">Vytvořit účet</a><a class="o-form__link" href="#">Obnovit zapomenuté heslo</a>
-            </form>
+            </div>
           </div>
         </div>
       </div>
@@ -316,7 +344,7 @@
                   <h2 class="m-contactItem__title">ZÁSILKOVÝ OBCHOD:</h2>
                   <div class="row">
                     <div class="col-12 col-sm-12 col-md-6">
-                      <div class="m-contactItem_content"><strong class="m-contactItem__subtitle">Zákaznický servis - informace</strong><strong class="m-contactItem__phone">Pionýrů 839 ( areál SELIKO Park )</strong><strong class="m-contactItem__subtitle">(Provozní doba : Po-Čt: 8-16h, Pá: 8-14:30h)</strong>
+                      <div class="m-contactItem_content"><strong class="m-contactItem__subtitle">Zákaznický servis - informace</strong><strong class="m-contactItem__phone">+420 558 638 206</strong><strong class="m-contactItem__subtitle">(Provozní doba : Po-Čt: 8-16h, Pá: 8-14:30h)</strong>
                         <p class="m-contactItem__text">skype:  general.army1</p>
                         <p class="m-contactItem__text">ICQ:  391684575</p>
                       </div>
@@ -327,6 +355,72 @@
                         <p class="m-contactItem__text">email : obchod@army-shop.cz </p><strong class="m-contactItem__subtitle">Reklamace</strong>
                         <p class="m-contactItem__text">email : jana.skarkova@army-shop.cz</p><strong class="m-contactItem__subtitle">Sklad, Velkosklad  </strong>
                         <p class="m-contactItem__text">email: velkoobchod@army-shop.cz </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-12 col-md-12">
+                <div class="m-contactItem">
+                  <h2 class="m-contactItem__title">KAMENNÉ PRODEJNY:</h2>
+                  <div class="row">
+                    <div class="col-12 col-sm-12 col-md-6">  
+                      <div class="m-contactItem_content"><img src="img/prodejna1.jpg" alt="OSTRAVA - VÍTKOVICE" title="OSTRAVA - VÍTKOVICE"><strong class="m-contactItem__subtitle">OSTRAVA - VÍTKOVICE</strong>
+                        <p class="m-contactItem__text">ARMYSHOP - Rudná čp. 1117/30</p>
+                        <p class="m-contactItem__text">Ostrava – Vítkovice, 703 00 </p>
+                        <p class="m-contactItem__text">Telefon/FAX : +420 596 632 384</p>
+                        <p class="m-contactItem__text">Mobil GSM : +420 776 648 648</p>
+                        <p class="m-contactItem__text">Email: rudna@army-shop.cz</p>
+                        <p class="m-contactItem__text">Skype: armyshoprudna1</p>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6">  
+                      <div class="m-contactItem_content"><img src="img/prodejna2.jpg" alt="FRÝDEK - MÍSTEK" title="FRÝDEK - MÍSTEK"><strong class="m-contactItem__subtitle">FRÝDEK - MÍSTEK;</strong>
+                        <p class="m-contactItem__text">ARMYSHOP - náměstí Svobody č.3</p>
+                        <p class="m-contactItem__text">Frýdek-Místek, 73801 </p>
+                        <p class="m-contactItem__text">Telefon/FAX : +420 558 433 775 </p>
+                        <p class="m-contactItem__text">Mobil GSM : +420 737 143 143</p>
+                        <p class="m-contactItem__text">Email: prodejna-fm@army-shop.cz</p>
+                        <p class="m-contactItem__text">Skype: armyshop-místek                                   </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-12 col-md-12">
+                <div class="m-contactItem">
+                  <div class="m-contactItem_content">
+                    <p class="m-contactItem__text">(více info viz odkaz " kamenné prodejny " v hlavním menu, PRODEJNÍ CENY  v kamenném a internetovém obchodě se liší, k okamžitému odběru pouze vybraný sortiment.)</p><br>
+                    <h2 class="m-contactItem__title">Obchodní údaje - fakturační adresa:</h2>
+                    <p class="m-contactItem__text">Název: GENERAL ARMY spol. s r.o.</p>
+                    <p class="m-contactItem__text">Adresa: Riegrova 857, 73801 Frýdek-Místek</p>
+                    <p class="m-contactItem__text">IČ: 47153750</p>
+                    <p class="m-contactItem__text">DIČ: CZ47153750</p>
+                    <p class="m-contactItem__text">ID datové schránky: 49i728r</p><strong class="m-contactItem__subtitle">Spol. zapsána  v obchodním rejstříku vedeného Krajským soudem v Ostravě oddíl C, vložka 4007, datum zápisu 14. září 1992 </strong><br><strong class="m-contactItem__subtitle">Výpis ze systému ARES ministerstva financí ČR</strong><a class="m-contactItem__link" href="#">Výpis z rejstříku ekonomických subjektů (ČSÚ) </a><a class="m-contactItem__link" href="#">Koncesní listina - prodej zbraní (pdf) </a><a class="m-contactItem__link" href="#">Koncesní listina - prodej střeliva (pdf) </a><br><strong class="m-contactItem__subtitle">Zodpovědná osoba</strong>
+                    <p class="m-contactItem__text">Michal Dluhoš ( jednatel )</p>
+                    <p class="m-contactItem__text">michal.dluhos@army-shop.cz</p><br>
+                    <p class="m-contactItem__text">Jan Dluhoš ( jednatel, správce sítě )</p>
+                    <p class="m-contactItem__text">jan.dluhos@army-shop.cz</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-12 col-md-12">
+                <div class="m-contactItem">
+                  <div class="row">
+                    <div class="col-12 col-sm-12 col-md-6"> 
+                      <div class="m-contactItem_content"> <strong class="m-contactItem__subtitle">Bankovní spojení pro Českou republiku      </strong>
+                        <p class="m-contactItem__text">Raiffeisen BANK - Frýdek-Místek, Ostravská 2129</p>
+                        <p class="m-contactItem__text">Č.ú. 3249454001 / 5500</p>
+                        <p class="m-contactItem__text">IBAN CZ1355000000003249454001</p>
+                        <p class="m-contactItem__text">SWIFT RZBCCZPP</p>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6">  
+                      <div class="m-contactItem_content"><strong class="m-contactItem__subtitle">Bankovní spojení pro Slovenskou republiku   </strong>
+                        <p class="m-contactItem__text">Slovenská spořitelna - Bratislava, Suché mýto 4</p>
+                        <p class="m-contactItem__text">Č.ú. 0313279612 / 0900</p>
+                        <p class="m-contactItem__text">IBAN SK3409000000000313279612</p>
+                        <p class="m-contactItem__text">SWIFT GIBASKBX</p>
                       </div>
                     </div>
                   </div>

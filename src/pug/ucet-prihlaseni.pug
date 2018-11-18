@@ -12,29 +12,65 @@ html(lang=lang)
                     .col-12.col-sm-12.col-md-12.col-lg-3
 
                     .col-12.col-sm-12.col-md-12.col-lg-6
-
-                        form.o-form(method="post" action="" class="login-form" name="login_form")
-
-                            .m-alert.-danger Zadali jste špatné údaje
+                        .m-userSidebar
+                            .m-userSidebar__top
+                                .m-userSidebar__title Přihlášení
+                            .m-userSidebar__bottom
+                                .nav.nav-tabs(role="tablist")
+                                    a.m-userSidebar__link.active(id="index-1-tab" data-toggle="tab" href="#index-1" role="tab" aria-controls="index-1" aria-selected="false") Zákazník
+                                    a.m-userSidebar__link(id="index-2-tab" data-toggle="tab" href="#index-2" role="tab" aria-controls="index-2" aria-selected="false") Velkoobchod
                             
-                            h2.o-form__title Přihlášení
-                            p.o-form__text Jako registrovaný uživatel získává slevu ve výši 1% na veškeré zboží, které není aktuálně ve slevě. 
+                        .tab-content
+                            .tab-pane.fade.show.active(id="index-1" role="tabpanel" aria-labelledby="index-1-tab")  
+                                form.o-form(method="post" action="" class="login-form" name="login_form")
 
-                            .o-form__group.m-formGroup
-                                input.m-formGroup__input(type="email" name="login_form_email" id="login_form_email" autocomplete="email" required placeholder=" ")
-                                label.m-formGroup__label(for="login_form_email") Emailová adresa
-                                span.m-formGroup__error Neplatný email
-                                span.m-formGroup__success
+                                    .m-alert.-danger Zadali jste špatné údaje
+                                    
+                                    h2.o-form__title Přihlášení
+                                    p.o-form__text Jako registrovaný uživatel získává slevu ve výši 1% na veškeré zboží, které není aktuálně ve slevě. 
 
-                            .o-form__group.m-formGroup
-                                input.m-formGroup__input(type="password" name="login_form_password" id="login_form_password" autocomplete="password" required placeholder=" ")
-                                label.m-formGroup__label(for="login_form_password") Heslo
-                                span.m-formGroup__error Neplatné heslo
-                                span.m-formGroup__success
+                                    .o-form__group.m-formGroup
+                                        input.m-formGroup__input(type="email" name="login_form_email" id="login_form_email" autocomplete="email" required placeholder=" ")
+                                        label.m-formGroup__label(for="login_form_email") Uživatelské jméno
+                                        span.m-formGroup__error Neplatné uživatelské jméno
+                                        span.m-formGroup__success
 
-                            button.btn.-secondary.-fullWidth(type="submit" id="login_form_submit") Přihlásit se
+                                    .o-form__group.m-formGroup
+                                        input.m-formGroup__input(type="password" name="login_form_password" id="login_form_password" autocomplete="password" required placeholder=" ")
+                                        label.m-formGroup__label(for="login_form_password") Heslo
+                                        span.m-formGroup__error Neplatné heslo
+                                        span.m-formGroup__success
 
-                            a.o-form__link(href="#") Obnovit zapomenuté heslo
+                                    button.btn.-secondary.-fullWidth(type="submit" id="login_form_submit") Přihlásit se
+
+                                    a.o-form__link(href="#") Obnovit zapomenuté heslo
+
+
+                            .tab-pane.fade(id="index-2" role="tabpane2" aria-labelledby="index-2-tab")  
+                                form.o-form(method="post" action="" class="login-form" name="login_form")
+
+                                    .m-alert.-danger Zadali jste špatné údaje
+                                    
+                                    h2.o-form__title Přihlášení
+                                    p.o-form__text Jako registrovaný uživatel získává slevu ve výši 1% na veškeré zboží, které není aktuálně ve slevě. 
+
+                                    .o-form__group.m-formGroup
+                                        input.m-formGroup__input(type="email" name="login_form_email" id="login_form_email" autocomplete="email" required placeholder=" ")
+                                        label.m-formGroup__label(for="login_form_email") Uživatelské jméno
+                                        span.m-formGroup__error Neplatné uživatelské jméno
+                                        span.m-formGroup__success
+
+                                    .o-form__group.m-formGroup
+                                        input.m-formGroup__input(type="password" name="login_form_password" id="login_form_password" autocomplete="password" required placeholder=" ")
+                                        label.m-formGroup__label(for="login_form_password") Heslo
+                                        span.m-formGroup__error Neplatné heslo
+                                        span.m-formGroup__success
+
+                                    button.btn.-secondary.-fullWidth(type="submit" id="login_form_submit") Přihlásit se
+
+                                    a.o-form__link(href="#") Obnovit zapomenuté heslo
+
+
 
                     .col-12.col-sm-12.col-md-12.col-lg-3
 

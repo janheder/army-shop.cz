@@ -6,12 +6,13 @@
 .m-contactItem__title{
     background: transparent;
     @include f-24-primary-medium;
-    padding: 15px 20px;
+    padding: 15px 0px;
     margin: 0;
+    font-weight: 700;
 }
 .m-contactItem_content{
-    padding: 20px;
-    background: $bg-white;
+    padding: 0px;
+    background: transparent;
     height: 100%;
     border-bottom-right-radius: $border-radius-primary;
     border-bottom-left-radius: $border-radius-primary;
@@ -34,11 +35,20 @@
     @include f-24-primary-medium; 
     color: $text-green;
     margin: 0;
+    display: block;
+}
+.m-contactItem__subtitle{
+    margin-top: 2rem;
 }
 .m-contactItem__text{
-    @include f-14-dark-regular; 
+    @include f-16-dark-regular; 
+    margin: 0;
+    line-height: 1.75;
 }
 .m-contactItem__button{
     text-align: center;
     margin-top: 20px;
+}
+.m-contactItem__link{
+    display: block;
 }
