@@ -108,6 +108,12 @@ footer{
     padding: 1rem 2rem;
     display: inline-block;
 }
+@media screen and (max-width:600px){
+    .m-emailSubscribe__text{
+        font-size: 2rem;
+        margin: 0;
+    }
+}
 
 /* ========================================================================== */
 /* FOOTER MAIN */
