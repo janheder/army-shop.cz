@@ -314,7 +314,7 @@
         <div class="modal-content o-modal__content">
           <div class="modal-header o-modal__header">
             <h5 class="modal-title o-modal__title" id="modal-contact-heading">Dotaz na produkt</h5>
-            <button class="o-modal__close close" type="button" data-dismiss="modal" aria-label="Close"><span class="a-icon -cross -red o-modal__closeIcon"></span></button>
+            <button class="o-modal__close close" type="button" data-dismiss="modal" aria-label="Close"><span class="a-icon -cross -white o-modal__closeIcon"></span></button>
           </div>
           <div class="modal-body o-modal__body">
             <form class="o-form" method="post" action="" name="question_form">
@@ -333,6 +333,10 @@
               <div class="o-form__group m-formGroup -checkbox">
                 <input class="m-formGroup__input" type="checkbox" name="question_form_legal" id="question_form_legal" required><span class="m-formGroup__checkbox a-checkbox"></span>
                 <label class="m-formGroup__label" for="question_form_legal">Souhlasím s podmínkami <a href="#">ochrany osobních údajů</a>          </label>
+              </div>
+              <div class="o-form__group m-formGroup">
+                <input class="m-formGroup__input" type="number" name="question_form_antispam" id="question_form_antispam" autocomplete="antispam" required placeholder=" ">
+                <label class="m-formGroup__label" for="question_form_antispam">Kontrolní otázka: 3+2</label><span class="m-formGroup__error">Neplatná kontrolní otázka</span><span class="m-formGroup__success"></span>
               </div>
               <button class="btn -fullWidth" type="submit" name="question_form_submit" id="question_form_submit">Odeslat dotaz</button>
             </form>

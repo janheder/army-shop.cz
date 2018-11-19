@@ -409,13 +409,13 @@
                   <input class="m-formGroup__input" type="number" name="register_form_billing_postal_code" id="register_form_billing_postal_code" autocomplete="postal-code" placeholder=" ">
                   <label class="m-formGroup__label" for="register_form_billing_postal_code">PSČ</label><span class="m-formGroup__error">Neplatné PSČ</span><span class="m-formGroup__success"></span>
                 </div>
-                <div class="o-form__group m-formGroup -radiobutton">
-                  <input class="m-formGroup__input" type="radio" name="register_form_billing_postal_country" id="register_form_billing_postal_country_cz" checked><span class="m-formGroup__radiobutton a-radiobutton"></span>
-                  <label class="m-formGroup__label" for="register_form_billing_postal_country_cz">Česká republika</label>
-                </div>
-                <div class="o-form__group m-formGroup -radiobutton">
-                  <input class="m-formGroup__input" type="radio" name="register_form_billing_postal_country" id="register_form_billing_postal_country_sk"><span class="m-formGroup__radiobutton a-radiobutton"></span>
-                  <label class="m-formGroup__label" for="register_form_billing_postal_country_sk">Slovensko</label>
+                <div class="col-12 col-md-12">
+                  <div class="o-form__group m-formGroup">
+                    <select class="m-formGroup__input" name="register_form_billing_postal_country" id="register_form_billing_postal_country" required checked>
+                      <option value="cz">Česká republika</option>
+                      <option value="sk">Slovensko</option>
+                    </select>
+                  </div>
                 </div>
               </div>
             </div>
@@ -451,14 +451,35 @@
                   <input class="m-formGroup__input" type="text" name="register_form_shipping_postal_code" id="register_form_shipping_postal_code" autocomplete="postal-code" placeholder=" ">
                   <label class="m-formGroup__label" for="register_form_shipping_postal_code">PSČ</label><span class="m-formGroup__error">Neplatné PSČ</span><span class="m-formGroup__success"></span>
                 </div>
-                <div class="o-form__group m-formGroup -radiobutton">
-                  <input class="m-formGroup__input" type="radio" name="register_form_shipping_postal_country" id="register_form_shipping_postal_country_cz" checked><span class="m-formGroup__radiobutton a-radiobutton"></span>
-                  <label class="m-formGroup__label" for="register_form_shipping_postal_country_cz">Česká republika</label>
+                <div class="col-12 col-md-12">
+                  <div class="o-form__group m-formGroup">
+                    <select class="m-formGroup__input" name="register_form_shipping_postal_country" id="register_form_shipping_postal_country" required checked>
+                      <option value="cz">Česká republika</option>
+                      <option value="sk">Slovensko</option>
+                    </select>
+                  </div>
                 </div>
-                <div class="o-form__group m-formGroup -radiobutton">
-                  <input class="m-formGroup__input" type="radio" name="register_form_shipping_postal_country" id="register_form_shipping_postal_country_sk"><span class="m-formGroup__radiobutton a-radiobutton"></span>
-                  <label class="m-formGroup__label" for="register_form_shipping_postal_country_sk">Slovensko</label>
-                </div>
+              </div>
+            </div>
+          </div>
+          <div class="o-form__divider m-formDivider">Velkoobchod</div>
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <div class="o-form__group m-formGroup">
+                <input class="m-formGroup__input" type="text" name="register_form_market_name" id="register_form_market_name" autocomplete="company" placeholder=" ">
+                <label class="m-formGroup__label" for="register_form_market_name">Název firmy</label><span class="m-formGroup__error">Neplatný název firmy</span><span class="m-formGroup__success"></span>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="o-form__group m-formGroup">
+                <input class="m-formGroup__input" type="text" name="register_form_market_ico" id="register_form_market_ico" autocomplete="ico" placeholder=" ">
+                <label class="m-formGroup__label" for="register_form_market_ico">IČO</label><span class="m-formGroup__error">Neplatné IČO</span><span class="m-formGroup__success"></span>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="o-form__group m-formGroup">
+                <input class="m-formGroup__input" type="text" name="register_form_market_dic" id="register_form_market_dic" autocomplete="dic" placeholder=" ">
+                <label class="m-formGroup__label" for="register_form_market_dic">DIČ</label><span class="m-formGroup__error">Neplatné DIČ</span><span class="m-formGroup__success">                          </span>
               </div>
             </div>
           </div>

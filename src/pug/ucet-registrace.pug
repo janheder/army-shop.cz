@@ -15,10 +15,6 @@ html(lang=lang)
 
                 form.o-form.-noMargin(method="post" action="" name="register_form" id="register_form")
 
-                    .o-form__group.m-formGroup.-checkbox
-                        input.m-formGroup__input(type="checkbox" name="register_form_market" id="register_form_market" required)
-                        span.m-formGroup__checkbox.a-checkbox
-                        label.m-formGroup__label.-small(for="register_form_market") Žádost o velkoobchodní účet (jen pro prodejce)
 
                     .o-form__divider.m-formDivider Osobní údaje
 
@@ -162,15 +158,11 @@ html(lang=lang)
                                     span.m-formGroup__error Neplatné PSČ
                                     span.m-formGroup__success
         
-                                .o-form__group.m-formGroup.-radiobutton
-                                    input.m-formGroup__input(type="radio" name="register_form_billing_postal_country" id="register_form_billing_postal_country_cz" checked)
-                                    span.m-formGroup__radiobutton.a-radiobutton
-                                    label.m-formGroup__label(for="register_form_billing_postal_country_cz") Česká republika
-
-                                .o-form__group.m-formGroup.-radiobutton
-                                    input.m-formGroup__input(type="radio" name="register_form_billing_postal_country" id="register_form_billing_postal_country_sk" )
-                                    span.m-formGroup__radiobutton.a-radiobutton
-                                    label.m-formGroup__label(for="register_form_billing_postal_country_sk") Slovensko
+                                .col-12.col-md-12
+                                    .o-form__group.m-formGroup
+                                        select.m-formGroup__input(name="register_form_billing_postal_country" id="register_form_billing_postal_country" required checked)
+                                            option(value="cz") Česká republika
+                                            option(value="sk") Slovensko
 
 
                         .col-12.col-md-6
@@ -219,19 +211,43 @@ html(lang=lang)
                                     span.m-formGroup__error Neplatné PSČ
                                     span.m-formGroup__success
 
-                                .o-form__group.m-formGroup.-radiobutton
-                                    input.m-formGroup__input(type="radio" name="register_form_shipping_postal_country" id="register_form_shipping_postal_country_cz" checked)
-                                    span.m-formGroup__radiobutton.a-radiobutton
-                                    label.m-formGroup__label(for="register_form_shipping_postal_country_cz") Česká republika
+                                .col-12.col-md-12
+                                    .o-form__group.m-formGroup
+                                        select.m-formGroup__input(name="register_form_shipping_postal_country" id="register_form_shipping_postal_country" required checked)
+                                            option(value="cz") Česká republika
+                                            option(value="sk") Slovensko
 
-                                .o-form__group.m-formGroup.-radiobutton
-                                    input.m-formGroup__input(type="radio" name="register_form_shipping_postal_country" id="register_form_shipping_postal_country_sk" )
-                                    span.m-formGroup__radiobutton.a-radiobutton
-                                    label.m-formGroup__label(for="register_form_shipping_postal_country_sk") Slovensko
+                    .o-form__divider.m-formDivider Velkoobchod
+
+                    .o-form__groupToggler(data-toggle="collapse" href="#formMarketCollapse" aria-expanded="false" aria-controls="formMarketCollapse")
+                        .o-form__group.m-formGroup.-switch
+                            input.m-formGroup__input(type="checkbox" name="register_form_market_toggler" id="register_form_market_toggler")
+                            span.m-formGroup__switch.a-switch
+                            label.m-formGroup__label(for="register_form_market_toggler") Žádost o velkoobchodní účet (jen pro prodejce)
+
+                    .collapse.o-form__groupCollapse(id="formMarketCollapse")
+                        .row
+                            .col-12.col-md-6
+                                .o-form__group.m-formGroup
+                                    input.m-formGroup__input(type="text" name="register_form_market_name" id="register_form_market_name" autocomplete="company" placeholder=" ")
+                                    label.m-formGroup__label(for="register_form_market_name") Název firmy
+                                    span.m-formGroup__error Neplatný název firmy
+                                    span.m-formGroup__success
+                            .col-12.col-md-6
+                                .o-form__group.m-formGroup
+                                    input.m-formGroup__input(type="text" name="register_form_market_ico" id="register_form_market_ico" autocomplete="ico" placeholder=" ")
+                                    label.m-formGroup__label(for="register_form_market_ico") IČO
+                                    span.m-formGroup__error Neplatné IČO
+                                    span.m-formGroup__success
+                            .col-12.col-md-6
+                                .o-form__group.m-formGroup
+                                    input.m-formGroup__input(type="text" name="register_form_market_dic" id="register_form_market_dic" autocomplete="dic" placeholder=" ")
+                                    label.m-formGroup__label(for="register_form_market_dic") DIČ #[span.m-formGroup__muted (nepovinné)]
+                                    span.m-formGroup__error Neplatné DIČ
+                                    span.m-formGroup__success
 
 
                     .o-form__divider.m-formDivider Ostatní
-
 
                     .o-form__group.m-formGroup.-checkbox
                         input.m-formGroup__input(type="checkbox" name="register_form_newsletter" id="register_form_newsletter")

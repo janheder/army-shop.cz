@@ -254,6 +254,16 @@ $('#register_form_register_toggler').click(function() {
     });
 });
 
+$('#register_form_market_toggler').click(function() {
+    $('#formMarketCollapse input:not(#register_form_market_dic)').each(function(){
+        if(!$(this).prop('required')){
+            $(this).prop('required',true);
+        }
+        else {
+        $(this).prop('required',false);
+        }
+    });
+});
 // =============================================================================
 // SHOW PASSWORD
 // =============================================================================

@@ -102,7 +102,8 @@ input{
 .m-formDivider{
     @include f-14-dark-regular;
     border-bottom: 1px solid $border-grey;
-    margin: 2rem 0;
+    margin: 0 0 2rem 0;
+    padding-top: 2rem;
 }
 
 .m-formGroup{
@@ -351,6 +352,9 @@ select.m-formGroup__input, select.m-formGroup__input:not(:placeholder-shown){
         top: 0;
         left: 0;
         padding-bottom: 5px;
+    }
+    .m-formGroup.-textarea .m-formGroup__label{
+        top: 0;
     }
     .m-formGroup__input{
         order: 1;

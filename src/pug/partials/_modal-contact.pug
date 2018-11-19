@@ -6,7 +6,7 @@
                 h5.modal-title.o-modal__title(id="modal-contact-heading") Dotaz na produkt
 
                 button.o-modal__close(type="button" class="close" data-dismiss="modal" aria-label="Close")
-                    span.a-icon.-cross.-red.o-modal__closeIcon
+                    span.a-icon.-cross.-white.o-modal__closeIcon
 
             .modal-body.o-modal__body
                 form.o-form(method="post" action="" name="question_form")
@@ -35,5 +35,11 @@
                         input.m-formGroup__input(type="checkbox" name="question_form_legal" id="question_form_legal" required)
                         span.m-formGroup__checkbox.a-checkbox
                         label.m-formGroup__label(for="question_form_legal") Souhlasím s podmínkami #[a(href="#") ochrany osobních údajů]          
+
+                    .o-form__group.m-formGroup
+                        input.m-formGroup__input(type="number" name="question_form_antispam" id="question_form_antispam" autocomplete="antispam" required placeholder=" ")
+                        label.m-formGroup__label(for="question_form_antispam") Kontrolní otázka: 3+2
+                        span.m-formGroup__error Neplatná kontrolní otázka
+                        span.m-formGroup__success
 
                     button.btn.-fullWidth(type="submit" name="question_form_submit" id="question_form_submit") Odeslat dotaz
