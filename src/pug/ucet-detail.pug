@@ -98,17 +98,11 @@ html(lang=lang)
                                 span.m-formGroup__error Neplatné PSČ
                                 span.m-formGroup__success
 
-                        .col-12.col-md-6
-                            .o-form__group.m-formGroup.-radiobutton
-                                input.m-formGroup__input(type="radio" name="register_form_country" id="register_form_country_cz" required checked)
-                                span.m-formGroup__radiobutton.a-radiobutton
-                                label.m-formGroup__label(for="register_form_country_cz") Česká republika
-
-                        .col-12.col-md-6
-                            .o-form__group.m-formGroup.-radiobutton
-                                input.m-formGroup__input(type="radio" name="register_form_country" id="register_form_country_sk" required)
-                                span.m-formGroup__radiobutton.a-radiobutton
-                                label.m-formGroup__label(for="register_form_country_sk") Slovensko
+                        .col-12.col-md-12
+                            .o-form__group.m-formGroup
+                                select.m-formGroup__input(name="register_form_country" id="register_form_country" required checked)
+                                    option(value="cz") Česká republika
+                                    option(value="sk") Slovensko
 
                     .row
                         .col-12.col-md-6

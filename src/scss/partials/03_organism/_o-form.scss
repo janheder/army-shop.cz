@@ -359,12 +359,7 @@ select.m-formGroup__input, select.m-formGroup__input:not(:placeholder-shown){
         height: 100%;
         width: 100%;
     }
-    .o-filter__single{
-        width: 25%;
-    }
-    .o-filter__single:nth-child(2){
-        display: none;
-    }
+  
 }
 /* IE 10, 11 CSS */ 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){

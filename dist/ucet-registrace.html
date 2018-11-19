@@ -288,6 +288,18 @@
           <div class="row">
             <div class="col-12 col-md-6">
               <div class="o-form__group m-formGroup">
+                <input class="m-formGroup__input" type="email" name="register_form_email" id="register_form_email" autocomplete="email" required placeholder=" ">
+                <label class="m-formGroup__label" for="register_form_email">Emailová adresa</label><span class="m-formGroup__error">Neplatný email</span><span class="m-formGroup__success"></span>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="o-form__group m-formGroup">
+                <input class="m-formGroup__input" type="text" name="register_form_username" id="register_form_username" autocomplete="username" required placeholder=" ">
+                <label class="m-formGroup__label" for="register_form_username">Uživatelské jméno</label><span class="m-formGroup__error">Neplatné uživatelské jméno</span><span class="m-formGroup__success"></span>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="o-form__group m-formGroup">
                 <input class="m-formGroup__input" type="text" name="register_form_name" id="register_form_name" autocomplete="given-name" required placeholder=" ">
                 <label class="m-formGroup__label" for="register_form_name">Jméno</label><span class="m-formGroup__error">Neplatné jméno</span><span class="m-formGroup__success"></span>
               </div>
@@ -300,17 +312,11 @@
             </div>
             <div class="col-12 col-md-6">
               <div class="o-form__group m-formGroup">
-                <input class="m-formGroup__input" type="email" name="register_form_email" id="register_form_email" autocomplete="email" required placeholder=" ">
-                <label class="m-formGroup__label" for="register_form_email">Emailová adresa</label><span class="m-formGroup__error">Neplatný email</span><span class="m-formGroup__success"></span>
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="o-form__group m-formGroup">
                 <input class="m-formGroup__input" type="tel" name="register_form_tel" id="register_form_tel" autocomplete="tel" required placeholder=" ">
                 <label class="m-formGroup__label" for="register_form_tel">Telefonní číslo</label><span class="m-formGroup__error">Neplatné číslo</span><span class="m-formGroup__success"></span>
               </div>
             </div>
-            <div class="col-12 col-md-12">
+            <div class="col-12 col-md-6">
               <div class="o-form__group m-formGroup">
                 <input class="m-formGroup__input" type="password" name="register_form_password" id="register_form_password" autocomplete="password" required placeholder=" ">
                 <label class="m-formGroup__label" for="register_form_password">Heslo</label><span class="m-formGroup__error">Neplatné heslo</span><span class="m-formGroup__success"></span>
@@ -343,16 +349,12 @@
                 <label class="m-formGroup__label" for="register_form_postal_code">PSČ</label><span class="m-formGroup__error">Neplatné PSČ</span><span class="m-formGroup__success"></span>
               </div>
             </div>
-            <div class="col-12 col-md-6">
-              <div class="o-form__group m-formGroup -radiobutton">
-                <input class="m-formGroup__input" type="radio" name="register_form_country" id="register_form_country_cz" required checked><span class="m-formGroup__radiobutton a-radiobutton"></span>
-                <label class="m-formGroup__label" for="register_form_country_cz">Česká republika</label>
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="o-form__group m-formGroup -radiobutton">
-                <input class="m-formGroup__input" type="radio" name="register_form_country" id="register_form_country_sk" required><span class="m-formGroup__radiobutton a-radiobutton"></span>
-                <label class="m-formGroup__label" for="register_form_country_sk">Slovensko</label>
+            <div class="col-12 col-md-12">
+              <div class="o-form__group m-formGroup">
+                <select class="m-formGroup__input" name="register_form_country" id="register_form_country" required checked>
+                  <option value="cz">Česká republika</option>
+                  <option value="sk">Slovensko</option>
+                </select>
               </div>
             </div>
           </div>

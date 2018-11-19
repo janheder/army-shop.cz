@@ -359,16 +359,12 @@
                 <label class="m-formGroup__label" for="register_form_postal_code">PSČ</label><span class="m-formGroup__error">Neplatné PSČ</span><span class="m-formGroup__success"></span>
               </div>
             </div>
-            <div class="col-12 col-md-6">
-              <div class="o-form__group m-formGroup -radiobutton">
-                <input class="m-formGroup__input" type="radio" name="register_form_country" id="register_form_country_cz" required checked><span class="m-formGroup__radiobutton a-radiobutton"></span>
-                <label class="m-formGroup__label" for="register_form_country_cz">Česká republika</label>
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="o-form__group m-formGroup -radiobutton">
-                <input class="m-formGroup__input" type="radio" name="register_form_country" id="register_form_country_sk" required><span class="m-formGroup__radiobutton a-radiobutton"></span>
-                <label class="m-formGroup__label" for="register_form_country_sk">Slovensko</label>
+            <div class="col-12 col-md-12">
+              <div class="o-form__group m-formGroup">
+                <select class="m-formGroup__input" name="register_form_country" id="register_form_country" required checked>
+                  <option value="cz">Česká republika</option>
+                  <option value="sk">Slovensko</option>
+                </select>
               </div>
             </div>
           </div>
