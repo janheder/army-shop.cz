@@ -7,6 +7,7 @@ html(lang=lang)
         include partials/_modal-add-to-cart.pug
         include partials/_modal-contact.pug
         include partials/_modal-stock.pug
+        include partials/_modal-sizes.pug
         include partials/_breadcrumb.pug
         section.o-productDetail
             .container
@@ -115,7 +116,7 @@ html(lang=lang)
                                         span.m-productDetailMain__stockLink(data-toggle="modal" data-target="#modal-stock") Více informací
 
                                 .m-productDetailMain__info
-                                    a.m-productDetailMain__id(href="#") TABULKA VELIKOSTÍ
+                                    a.m-productDetailMain__id(data-toggle="modal" data-target="#modal-sizes" style="cursor:pointer;") TABULKA VELIKOSTÍ
 
                                 .m-productDetailMain__cta
 
