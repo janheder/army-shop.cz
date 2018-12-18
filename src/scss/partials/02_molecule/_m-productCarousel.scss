@@ -12,6 +12,10 @@
 }
 .m-productCarousel__slide{
     height: auto;
+    
+    .m-productCell{
+        height: 100%;
+    }
 }
 .m-productCarousel__swiperButton{
     background: rgba(0,0,0,0.5);
