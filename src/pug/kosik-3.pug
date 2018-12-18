@@ -142,7 +142,7 @@ html(lang=lang)
 
                                     .col-12.col-md-12
                                         .o-form__group.m-formGroup
-                                            select.m-formGroup__input(name="register_form_country" id="register_form_country" required checked)
+                                            select.m-formGroup__input(name="register_form_country" id="register_form_country" required)
                                                 option(value="cz") Česká republika
                                                 option(value="sk") Slovensko
 
@@ -206,17 +206,10 @@ html(lang=lang)
                                                 label.m-formGroup__label(for="register_form_billing_postal_code") PSČ
                                                 span.m-formGroup__error Neplatné PSČ
                                                 span.m-formGroup__success
-                 
-                                            .o-form__group.m-formGroup.-radiobutton
-                                                input.m-formGroup__input(type="radio" name="register_form_billing_postal_country" id="register_form_billing_postal_country_cz" checked)
-                                                span.m-formGroup__radiobutton.a-radiobutton
-                                                label.m-formGroup__label(for="register_form_billing_postal_country_cz") Česká republika
 
-                                            .o-form__group.m-formGroup.-radiobutton
-                                                input.m-formGroup__input(type="radio" name="register_form_billing_postal_country" id="register_form_billing_postal_country_sk" )
-                                                span.m-formGroup__radiobutton.a-radiobutton
-                                                label.m-formGroup__label(for="register_form_billing_postal_country_sk") Slovensko
-
+                                            select.m-formGroup__input(name="register_form_billing_postal_country" id="register_form_billing_postal_country" required)
+                                                option(value="cz") Česká republika
+                                                option(value="sk") Slovensko
 
                                     .col-12.col-md-6
 
@@ -264,17 +257,9 @@ html(lang=lang)
                                                 span.m-formGroup__error Neplatné PSČ
                                                 span.m-formGroup__success
 
-                                            .o-form__group.m-formGroup.-radiobutton
-                                                input.m-formGroup__input(type="radio" name="register_form_shipping_postal_country" id="register_form_shipping_postal_country_cz" checked)
-                                                span.m-formGroup__radiobutton.a-radiobutton
-                                                label.m-formGroup__label(for="register_form_shipping_postal_country_cz") Česká republika
-
-                                            .o-form__group.m-formGroup.-radiobutton
-                                                input.m-formGroup__input(type="radio" name="register_form_shipping_postal_country" id="register_form_shipping_postal_country_sk" )
-                                                span.m-formGroup__radiobutton.a-radiobutton
-                                                label.m-formGroup__label(for="register_form_shipping_postal_country_sk") Slovensko
-
-
+                                            select.m-formGroup__input(name="register_form_shipping_postal_country" id="register_form_shipping_postal_country" required)
+                                                option(value="cz") Česká republika
+                                                option(value="sk") Slovensko
 
 
                                 .o-form__divider.m-formDivider Ostatní
