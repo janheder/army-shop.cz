@@ -49,7 +49,6 @@ html(lang=lang)
                                     .m-cartItemSingle__thumb
                                         img.m-cartItemSingle__img.lazy(src=URLbase+"img/placeholder-200x200.png" data-src=URLbase+"img/product-thumb-small.jpg")
 
-
                             .m-cartItemSingle__col-2   
                                 .m-cartItemSingle__name-wrap
                                     a.m-cartItemSingle__name(href="#") #{ProductName}
@@ -73,6 +72,15 @@ html(lang=lang)
                                         p.m-cartItemSingle__sum #[span 18 546] Kč
                                     .m-cartItemSingle__delete-wrap
                                         a.a-icon.-crossCircle.-red(href="#")
+
+
+
+                    .m-alert.-danger Slevový kód nelze uplatnit protože cena nákupu je nižší  nebo stejná jako výše slevy na kupónu
+                    .m-alert.-info Slevový kód: ".$row_sk->kod." částka v Kč
+                    .m-alert.-info Slevový kód: ".$row_sk->kod." částka v %
+                    .m-alert.-info Množstevní sleva MO v Kč
+                    .m-alert.-info Množstevní sleva VO v Kč
+
                     .m-cartPriceMisc
                         .m-cartPriceMisc__code
                             .m-cartPriceMisc__codeText Slevový kód:

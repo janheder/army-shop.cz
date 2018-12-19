@@ -91,6 +91,7 @@
     background: $bg-white;
     box-shadow: $box-shadow-primary;
     width: 380px;
+    z-index: 9;
 }
 .m-navCart__collapseItem{
     display: flex;
