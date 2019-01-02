@@ -4,6 +4,7 @@ html(lang=lang)
     include partials/_header.pug  
     body
         include partials/_navMain.pug
+        include partials/_modal-posta.pug
         
         section.o-cartNav
             .container.o-cartNav__container
@@ -86,7 +87,7 @@ html(lang=lang)
                     .o-form__group.m-formGroup.-radiobutton.-cart
                         input.m-formGroup__input(type="radio" name="doprava" id="doprava2")
                         span.m-formGroup__radiobutton.a-radiobutton
-                        label.m-formGroup__label(for="doprava2") DOBÍRKA - ČESKÁ POŠTA - BALÍK DO RUKY           
+                        label.m-formGroup__label(for="doprava2" onclick="$('#modal-posta').modal('toggle');") DOBÍRKA - ČESKÁ POŠTA - BALÍK NA POŠTU         
                         .m-formGroup__cartPrice 130 Kč             
 
                     .o-form__group.m-formGroup.-radiobutton.-cart
