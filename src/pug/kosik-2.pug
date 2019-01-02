@@ -84,10 +84,10 @@ html(lang=lang)
                         label.m-formGroup__label(for="doprava1") DOBÍRKA - ČESKÁ POŠTA - BALÍK DO RUKY           
                         .m-formGroup__cartPrice 130 Kč
 
-                    .o-form__group.m-formGroup.-radiobutton.-cart
+                    .o-form__group.m-formGroup.-radiobutton.-cart(onclick="$('#modal-posta').modal('toggle');")
                         input.m-formGroup__input(type="radio" name="doprava" id="doprava2")
                         span.m-formGroup__radiobutton.a-radiobutton
-                        label.m-formGroup__label(for="doprava2" onclick="$('#modal-posta').modal('toggle');") DOBÍRKA - ČESKÁ POŠTA - BALÍK NA POŠTU         
+                        label.m-formGroup__label(for="doprava2") DOBÍRKA - ČESKÁ POŠTA - BALÍK NA POŠTU         
                         .m-formGroup__cartPrice 130 Kč             
 
                     .o-form__group.m-formGroup.-radiobutton.-cart
