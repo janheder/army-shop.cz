@@ -1,0 +1,27 @@
+doctype html
+include partials/_variables.pug  
+html(lang=lang)
+    include partials/_header.pug  
+    body
+        include partials/_navMain.pug
+                
+        include partials/_breadcrumb.pug
+        main
+            .container
+                .row
+                    .col-12.col-sm-12.col-md-12.col-lg-3
+
+                    .col-12.col-sm-12.col-md-12.col-lg-6
+                        .m-alert.-danger #[h2 18+] #[br] Následující stránky jsou určeny výhradně osobám starším 18 let #[br] #[br]
+
+                        .m-cartButtons
+                            a.btn.-dark(href="#") Krok zpět
+                            a.btn.-secondary(href="#") Pokračovat #[span.a-btnIcon #[span.a-icon.-cheveron.-white]]
+
+                    .col-12.col-sm-12.col-md-12.col-lg-3
+
+     
+
+        include partials/_footer.pug
+
+        include partials/_js-include.pug
