@@ -337,6 +337,14 @@
               <div class="m-cartOverview__shippingNumber"></div>
             </div>
           </div>
+          <div class="m-cartOverview__plus"> </div>
+          <div class="m-cartOverview__payment">
+            <div class="m-cartOverview__paymentText">Způsob dopravy a platby</div>
+            <div class="m-cartOverview__paymentWrap">
+              <div class="m-cartOverview__paymentTitle">Nevybráno</div>
+              <div class="m-cartOverview__paymentNumber"></div>
+            </div>
+          </div>
           <div class="m-cartOverview__equals"> </div>
           <div class="m-cartOverview__price">
             <div class="m-cartOverview__priceText">Celková cena s DPH</div>
@@ -344,35 +352,36 @@
           </div>
         </div>
         <form class="o-cartDeliveryForm" method="post" action="" name="delivery_form" id="delivery_form">
-          <h1 class="o-cartDeliveryForm__title">Výběr dopravy a platby</h1>
+          <h1 class="o-cartDeliveryForm__title">Výběr dopravy</h1>
           <div class="o-form__group m-formGroup -radiobutton -cart">
-            <input class="m-formGroup__input" type="radio" name="doprava" id="doprava1"><span class="m-formGroup__radiobutton a-radiobutton"></span>
-            <label class="m-formGroup__label" for="doprava1">DOBÍRKA - ČESKÁ POŠTA - BALÍK DO RUKY           </label>
+            <input class="m-formGroup__input" type="radio" name="doprava" id="doprava1" required><span class="m-formGroup__radiobutton a-radiobutton"></span>
+            <label class="m-formGroup__label" for="doprava1">ČESKÁ POŠTA - BALÍK DO RUKY           </label>
             <div class="m-formGroup__cartPrice">130 Kč</div>
           </div>
           <div class="o-form__group m-formGroup -radiobutton -cart" onclick="$('#modal-posta').modal('toggle');">
-            <input class="m-formGroup__input" type="radio" name="doprava" id="doprava2"><span class="m-formGroup__radiobutton a-radiobutton"></span>
-            <label class="m-formGroup__label" for="doprava2">DOBÍRKA - ČESKÁ POŠTA - BALÍK NA POŠTU         </label>
+            <input class="m-formGroup__input" type="radio" name="doprava" id="doprava2" required><span class="m-formGroup__radiobutton a-radiobutton"></span>
+            <label class="m-formGroup__label" for="doprava2">ČESKÁ POŠTA - BALÍK NA POŠTU         </label>
             <div class="m-formGroup__cartPrice">130 Kč             </div>
           </div>
           <div class="o-form__group m-formGroup -radiobutton -cart">
-            <input class="m-formGroup__input" type="radio" name="doprava" id="doprava3"><span class="m-formGroup__radiobutton a-radiobutton"></span>
-            <label class="m-formGroup__label" for="doprava3">DOBÍRKA - ČESKÁ POŠTA - BALÍK DO RUKY           </label>
+            <input class="m-formGroup__input" type="radio" name="doprava" id="doprava3" required><span class="m-formGroup__radiobutton a-radiobutton"></span>
+            <label class="m-formGroup__label" for="doprava3">ČESKÁ POŠTA - BALÍK DO RUKY           </label>
             <div class="m-formGroup__cartPrice">130 Kč</div>
-          </div><br>
+          </div>
+          <h1 class="o-cartDeliveryForm__title">Výběr platby</h1>
           <div class="o-form__group m-formGroup -radiobutton -cart">
-            <input class="m-formGroup__input" type="radio" name="doprava" id="doprava4"><span class="m-formGroup__radiobutton a-radiobutton"></span>
-            <label class="m-formGroup__label" for="doprava4">DOBÍRKA - ČESKÁ POŠTA - BALÍK DO RUKY           </label>
+            <input class="m-formGroup__input" type="radio" name="platba" id="platba1" required disabled><span class="m-formGroup__radiobutton a-radiobutton"></span>
+            <label class="m-formGroup__label" for="platba1">DOBÍRKA          </label>
             <div class="m-formGroup__cartPrice">130 Kč</div>
           </div>
           <div class="o-form__group m-formGroup -radiobutton -cart">
-            <input class="m-formGroup__input" type="radio" name="doprava" id="doprava5"><span class="m-formGroup__radiobutton a-radiobutton"></span>
-            <label class="m-formGroup__label" for="doprava5">DOBÍRKA - ČESKÁ POŠTA - BALÍK DO RUKY           </label>
+            <input class="m-formGroup__input" type="radio" name="platba" id="platba2" required><span class="m-formGroup__radiobutton a-radiobutton"></span>
+            <label class="m-formGroup__label" for="platba2">PLATEBNÍ KARTA        </label>
             <div class="m-formGroup__cartPrice">130 Kč             </div>
           </div>
           <div class="o-form__group m-formGroup -radiobutton -cart">
-            <input class="m-formGroup__input" type="radio" name="doprava" id="doprava6"><span class="m-formGroup__radiobutton a-radiobutton"></span>
-            <label class="m-formGroup__label" for="doprava6">DOBÍRKA - ČESKÁ POŠTA - BALÍK DO RUKY           </label>
+            <input class="m-formGroup__input" type="radio" name="platba" id="platba3" required><span class="m-formGroup__radiobutton a-radiobutton"></span>
+            <label class="m-formGroup__label" for="platba3">PLATEBNÍ KARTA          </label>
             <div class="m-formGroup__cartPrice">130 Kč</div>
           </div>
           <div class="m-alert -success">Vaše balíková zásilka bude připravena k vyzvednutí na poště: <br> Ostrava 34, náměstí Družby 1215/2, Ostrava, 70034</div>

@@ -95,7 +95,7 @@ if (styletotest in document.body.style){
 else {
     $('.b-bgCover__wrap').each(function () {
         var $container = $(this),
-        imgUrl = $container.find('img').attr('src');
+        imgUrl = $container.find('.b-bgCover__img');
         if (imgUrl) {
             $(this).css('backgroundImage', 'url(' + imgUrl + ')');
             $('.b-bgCover__img').css('display','none');
@@ -373,12 +373,30 @@ $('.o-cartDeliveryForm .m-formGroup__input[name="doprava"]').click(function () {
     $(".m-cartOverview__shippingNumber").text(value);
 });
 
+if($('.o-cartDeliveryForm .m-formGroup__input[name="platba"]').prop('checked')){ 
+
+    var name = $('.o-cartDeliveryForm .m-formGroup__input[name="platba"]:checked').siblings(".m-formGroup__label").text();
+    $(".m-cartOverview__paymentTitle").text(name);
+
+    var value = $('.o-cartDeliveryForm .m-formGroup__input[name="platba"]:checked').siblings(".m-formGroup__cartPrice").text();
+    $(".m-cartOverview__paymentNumber").text(value);
+
+}
+
+$('.o-cartDeliveryForm .m-formGroup__input[name="platba"]').click(function () { 
+    
+    var name = $('.o-cartDeliveryForm .m-formGroup__input[name="platba"]:checked').siblings(".m-formGroup__label").text();
+    $(".m-cartOverview__paymentTitle").text(name);
+
+    var value = $('.o-cartDeliveryForm .m-formGroup__input[name="platba"]:checked').siblings(".m-formGroup__cartPrice").text();
+    $(".m-cartOverview__paymentNumber").text(value);
+});
 
 
 
 
 var cena = parseInt($(".m-cartOverview__product").data("price"));
-$('.o-cartDeliveryForm .m-formGroup__input[name="doprava"]').click(function () { 
+$('.o-cartDeliveryForm .m-formGroup__input[name="doprava"], .o-cartDeliveryForm .m-formGroup__input[name="platba"]').click(function () { 
 
     var doprava = parseInt($('.m-cartOverview__shippingNumber').text().replace(/[^0-9\.]/g, ''));
     if($.isNumeric(doprava)){
