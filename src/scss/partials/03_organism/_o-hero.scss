@@ -105,6 +105,7 @@
 .m-heroCarousel__description{
     @include f-18-white-regular;
     height: 54px;
+    max-width: 100%;
 }
 .m-heroCarousel__btn{
     margin-top: 4rem;
