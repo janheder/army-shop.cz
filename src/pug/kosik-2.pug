@@ -90,7 +90,11 @@ html(lang=lang)
                     .o-form__group.m-formGroup.-radiobutton.-cart
                         input.m-formGroup__input(type="radio" name="doprava" id="doprava1" required)
                         span.m-formGroup__radiobutton.a-radiobutton
-                        label.m-formGroup__label(for="doprava1") ČESKÁ POŠTA - BALÍK DO RUKY           
+                        .m-formGroup__imgWrap
+                            img.m-formGroup__img(src=URLbase+"img/cp-balik-posta.png")
+                        .m-formGroup__content
+                            label.m-formGroup__label(for="doprava1") ČESKÁ POŠTA - BALÍK DO RUKY
+                            span.m-formGroup__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce tellus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam at arcu a est sollicitudin euismod. Duis pulvinar. Aliquam ornare wisi eu metus.         
                         .m-formGroup__cartPrice 130 Kč
 
                     .o-form__group.m-formGroup.-radiobutton.-cart(onclick="$('#modal-posta').modal('toggle');")
