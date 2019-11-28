@@ -167,6 +167,7 @@ input{
         .m-formGroup__content{
             display: flex;
             flex-direction: column;
+            flex-grow: 1;
         }
         .m-formGroup__label{
             position: relative;
