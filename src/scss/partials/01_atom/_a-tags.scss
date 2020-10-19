@@ -61,7 +61,7 @@
     border-radius: 50%;
     position: absolute;
     bottom: 10px;
-    right: 10px;
+    right: -10px;
     color: $text-white;
     height: 40px;
     width: 40px;
@@ -72,6 +72,29 @@
     z-index: 2;
     padding: 0;
     margin: 0;
+
+    &::after{
+        content: none;
+    }
+}
+.a-tag.-delivery{
+    background: $bg-green;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    color: $text-white;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
 
     &::after{
         content: none;
