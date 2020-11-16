@@ -1,0 +1,30 @@
+doctype html
+include partials/_variables.pug  
+html(lang=lang)
+    include partials/_header.pug  
+    body
+        include partials/_navMain.pug
+                
+        include partials/_breadcrumb.pug
+        main
+            .container
+                .row
+                    .col-12.col-sm-12.col-md-12.col-lg-3
+
+                    .col-12.col-sm-12.col-md-12.col-lg-6
+                        .playment-card
+                            h2.o-form__title Platba kartou
+                            p.o-form__text Vybrali jste platbu kartou online. Klikněte na tlačítko "Zaplatit kartou online" a budete přesměrováni na platební rozhraní banky
+
+        
+
+                            a.btn(href="" onclick="") Zaplatit online kartou
+
+    
+
+                    .col-12.col-sm-12.col-md-12.col-lg-3
+
+
+        include partials/_footer.pug
+
+        include partials/_js-include.pug
