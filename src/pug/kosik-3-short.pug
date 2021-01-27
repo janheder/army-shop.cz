@@ -1,0 +1,212 @@
+doctype html
+include partials/_variables.pug  
+html(lang=lang)
+    include partials/_header.pug  
+    body
+        include partials/_navMain.pug
+        
+        section.o-cartNav
+            .container.o-cartNav__container
+                .o-cartNav__content
+                    a.o-cartNav__single.-complete(href="#")
+                        .o-cartNav__number 1
+                        .o-cartNav__title Nákupní košík
+                    a.o-cartNav__single.-complete(href="#")
+                        .o-cartNav__number 2
+                        .o-cartNav__title Doprava a platba
+                    .o-cartNav__single.-active
+                        .o-cartNav__number 3
+                        .o-cartNav__title Osobní údaje
+                    .o-cartNav__single
+                        .o-cartNav__number 4
+                        .o-cartNav__title Shrnutí objednávky
+
+
+        section.o-cartNavResponsive
+            a.o-cartNavResponsive__link.-prev(href="/kosik.html?krok=2")
+                span.a-icon.-cheveron.o-cartNavResponsive__icon
+            p.o-cartNavResponsive__title 3/4 Osobní údaje
+            a.o-cartNavResponsive__link.-next(onclick="responsive_check()")
+                span.a-icon.-cheveron.o-cartNavResponsive__icon
+
+        .a-cartNavResponsivePush
+
+        main
+            .container
+                .m-alert.-info Slevový kód: ".$row_sk->kod." částka v Kč
+                .m-alert.-info Slevový kód: ".$row_sk->kod." částka v %
+                .m-alert.-info Množstevní sleva MO v Kč
+                .m-alert.-info Množstevní sleva VO v Kč
+                .m-cartOverview
+                    .m-cartOverview__product
+                        .m-cartOverview__productSingle
+                            .m-cartOverview__productThumb
+                                img.m-cartOverview__productImg(src=URLbase+"img/product-thumb-small.jpg" alt="#" title="#")
+                            .m-cartOverview__productNumber 2x
+
+                        .m-cartOverview__productSingle
+                            .m-cartOverview__productThumb
+                                img.m-cartOverview__productImg(src=URLbase+"img/product-thumb-small.jpg" alt="#" title="#")
+                            .m-cartOverview__productNumber 2x
+
+                        .m-cartOverview__productSingle(data-toggle="tooltip" data-html="true" title="Produkt název<br>Produkt název<br>Produkt název" data-placement="right")
+                            .m-cartOverview__productThumb.-more
+                                .m-cartOverview__productImg +10
+                            .m-cartOverview__productNumber
+
+                    .m-cartOverview__plus 
+
+                    .m-cartOverview__shipping
+                        .m-cartOverview__shippingText Způsob dopravy a platby
+                        .m-cartOverview__shippingWrap
+                            .m-cartOverview__shippingTitle Nevybráno
+                            .m-cartOverview__shippingNumber
+
+                    .m-cartOverview__equals 
+
+                    .m-cartOverview__price
+                        .m-cartOverview__priceText Celková cena s DPH
+                        .m-cartOverview__priceTitle 0 Kč
+
+
+                .a-cartResponsiveError Prosím zadejte své osobní údaje nebo se přihlaste.
+
+                .row
+                    .col-12.col-sm-12.col-md-12.col-lg-8.register-form-col
+                        form.o-form(method="post" action="" name="register_form" id="register_form")
+
+                            a.o-form__collapseToggler(data-toggle="collapse" id="js-registerCollpaseToggler" href="#register-collapse" aria-expanded="true" aria-controls="register-collapse") Bez registrace #[span.a-icon.-cheveron.o-form__collapseTogglerIcon]
+                            .collapse.o-form__collapse.show(id="register-collapse")
+
+                                h2.o-form__title Bez registrace
+
+                                .o-form__divider.m-formDivider Osobní údaje
+
+                                .row
+                                    .col-12.col-md-6
+                                        .o-form__group.m-formGroup
+                                            input.m-formGroup__input(type="text" name="register_form_name" id="register_form_name" autocomplete="given-name" required placeholder=" ")
+                                            label.m-formGroup__label(for="register_form_name") Jméno
+                                            span.m-formGroup__error Neplatné jméno
+                                            span.m-formGroup__success
+                                            
+                                    .col-12.col-md-6
+                                        .o-form__group.m-formGroup       
+                                            input.m-formGroup__input(type="text" name="register_form_surname" id="register_form_surname" autocomplete="family-name" required placeholder=" ")
+                                            label.m-formGroup__label(for="register_form_surname") Příjmení
+                                            span.m-formGroup__error Neplatné příjmení
+                                            span.m-formGroup__success
+
+                                    .col-12.col-md-6
+                                        .o-form__group.m-formGroup
+                                            input.m-formGroup__input(type="email" name="register_form_email" id="register_form_email" autocomplete="email" required placeholder=" ")
+                                            label.m-formGroup__label(for="register_form_email") Emailová adresa
+                                            span.m-formGroup__error Neplatný email
+                                            span.m-formGroup__success
+                                            
+                                    .col-12.col-md-6
+                                        .o-form__group.m-formGroup
+                                            input.m-formGroup__input(type="tel" name="register_form_tel" id="register_form_tel" autocomplete="tel" required placeholder=" ")
+                                            label.m-formGroup__label(for="register_form_tel") Telefonní číslo
+                                            span.m-formGroup__error Neplatné číslo
+                                            span.m-formGroup__success
+
+
+                                .o-form__divider.m-formDivider Ostatní
+
+
+                                .o-form__groupToggler(data-toggle="collapse" href="#formRegisterCollapse" aria-expanded="false" aria-controls="formRegisterCollapse")
+                                    .o-form__group.m-formGroup.-switch
+                                        input.m-formGroup__input(type="checkbox" name="register_form_register_toggler" id="register_form_register_toggler")
+                                        span.m-formGroup__switch.a-switch
+                                        label.m-formGroup__label(for="register_form_register_toggler") Mám zájem o vytvoření účtu
+
+                                .collapse.o-form__groupCollapse(id="formRegisterCollapse")
+
+                                    .o-form__group.m-formGroup
+                                        input.m-formGroup__input(type="text" name="register_form_register_username" id="register_form_register_username" autocomplete="username" placeholder=" ")
+                                        label.m-formGroup__label(for="register_form_register_username") Uživatelské jméno
+                                        span.m-formGroup__error Neplatné uživatelské jméno
+                                        span.m-formGroup__success
+
+                                    .o-form__group.m-formGroup
+                                        input.m-formGroup__input(type="password" name="register_form_register_password" id="register_form_register_password" autocomplete="password" placeholder=" ")
+                                        label.m-formGroup__label(for="register_form_register_password") Heslo
+                                        span.m-formGroup__error Neplatné heslo
+                                        span.m-formGroup__success
+
+                                    .o-form__group.m-formGroup.-checkbox
+                                        input.m-formGroup__input(type="checkbox" name="register_form_legal" id="register_form_legal")
+                                        span.m-formGroup__checkbox.a-checkbox
+                                        label.m-formGroup__label.-small(for="register_form_legal") Souhlasím se #[a(href="#") zpracováním osobních údajů] za účelem registrace.          
+
+                            
+
+
+                                .o-form__legal Vložením údajů beru na vědomí #[a(href="#") zpracování osobních údajů]
+
+                                .o-form__group.m-formGroup.-checkbox
+                                    input.m-formGroup__input(type="checkbox" name="register_form_newsletter" id="register_form_newsletter")
+                                    span.m-formGroup__checkbox.a-checkbox
+                                    label.m-formGroup__label.-small(for="register_form_newsletter") Chci odebírat newsletter a souhlasím se #[a(href="#") zpracováním osobních údajů] za účelem zasílání informací o novinkách a slevách.            
+
+                        
+                                .m-cartButtons
+                                    a.btn.-dark(href="#") Krok zpět
+                                    button.btn.-secondary(type="submit" id="register_form_submit") Souhrn objednávky #[span.a-btnIcon #[span.a-icon.-cheveron.-white]]  
+
+
+
+
+                    .col-12.col-sm-12.col-md-12.col-lg-4.login-form-col
+
+                        form.o-form(method="post" action="" class="login-form" name="login_form")
+                            
+                            a.o-form__collapseToggler(data-toggle="collapse" href="#login-collapse" aria-expanded="true" aria-controls="login-collapse") Přihlášení #[span.a-icon.-cheveron.o-form__collapseTogglerIcon]
+                            .collapse.o-form__collapse.show(id="login-collapse")
+
+                                h2.o-form__title Přihlášení
+                                p.o-form__text Jako registrovaný uživatel získává slevu ve výši 1% na veškeré zboží, které není aktuálně ve slevě. 
+
+                                .o-form__group.m-formGroup
+                                    input.m-formGroup__input(type="text" name="login_form_username" id="login_form_username" autocomplete="username" required placeholder=" ")
+                                    label.m-formGroup__label(for="login_form_username") Uživatelské jméno
+                                    span.m-formGroup__error Neplatné uživatelské jméno
+                                    span.m-formGroup__success
+
+                                .o-form__group.m-formGroup
+                                    input.m-formGroup__input(type="password" name="login_form_password" id="login_form_password" autocomplete="password" required placeholder=" ")
+                                    label.m-formGroup__label(for="login_form_password") Heslo
+                                    span.m-formGroup__error Neplatné heslo
+                                    span.m-formGroup__success
+
+                                .o-form__group.m-formGroup.-checkbox
+                                    input.m-formGroup__input(type="checkbox" name="login_form_legal" id="login_form_legal")
+                                    span.m-formGroup__checkbox.a-checkbox
+                                    label.m-formGroup__label.-small(for="login_form_legal") Přihlašuji se jako velkoobchod    
+
+                                button.btn.-secondary.-fullWidth(type="submit" id="login_form_submit_cart") Přihlásit se
+
+                                a.o-form__link(href="#") Obnovit zapomenuté heslo
+
+
+            .m-cartBarResponsive
+                .m-cartBarResponsive__priceWrap
+                    p.m-cartBarResponsive__text Celková cena s DPH
+                    h3.m-cartBarResponsive__price #[span 65 599] Kč
+                .m-cartBarResponsive__btnWrap
+                    button.btn.-secondary.m-cartBarResponsive__btn(onclick="responsive_check()") Souhrn objednávky #[span.a-btnIcon #[span.a-icon.-cheveron.-white]]
+
+
+            script.
+                function responsive_check(){
+                    if($("#js-registerCollpaseToggler").attr("aria-expanded") === "false"){
+                        $(".a-cartResponsiveError").fadeIn(200);
+                    }else{
+                        $("#register_form_submit").trigger("click");
+                    }
+                }
+
+        include partials/_footer.pug
+
+        include partials/_js-include.pug
