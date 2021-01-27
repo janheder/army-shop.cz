@@ -56,3 +56,17 @@
 /* ========================================================================== */
 
 @import "partials/05_page/**/*";
+
+
+
+.notice{
+    color: white;
+    background: #AE1313;
+    padding: 10px 0;
+}
+.playment-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
