@@ -112,6 +112,73 @@ html(lang=lang)
                                             span.m-formGroup__success
 
 
+
+                                .row
+                                    .col-12.col-md-12
+
+                                        .o-form__groupToggler(data-toggle="collapse" href="#formBillingCollapse" aria-expanded="false" aria-controls="formBillingCollapse")
+                                            .o-form__group.m-formGroup.-switch
+                                                input.m-formGroup__input(type="checkbox" name="register_form_billing_toggler" id="register_form_billing_toggler" )
+                                                span.m-formGroup__switch.a-switch
+                                                label.m-formGroup__label(for="register_form_billing_toggler") Vyplnit fakturační adresu   
+
+                                        .collapse.o-form__groupCollapse(id="formBillingCollapse")
+
+                                            .o-form__group.m-formGroup
+                                                input.m-formGroup__input(type="text" name="register_form_billing_name" id="register_form_billing_name" autocomplete="name" placeholder=" ")
+                                                label.m-formGroup__label(for="register_form_billing_name") Jméno a příjmení #[span.m-formGroup__muted (nepovinné)]
+                                                span.m-formGroup__error Neplatné jméno a příjmení
+                                                span.m-formGroup__success
+
+                                            .o-form__group.m-formGroup
+                                                input.m-formGroup__input(type="text" name="register_form_billing_company" id="register_form_billing_company" autocomplete="org" placeholder=" ")
+                                                label.m-formGroup__label(for="register_form_billing_company") Název firmy 
+                                                span.m-formGroup__error Neplatný název firmy
+                                                span.m-formGroup__success
+
+                                            .o-form__group.m-formGroup
+                                                input.m-formGroup__input(type="text" name="register_form_billing_ico" id="register_form_billing_ico" autocomplete="ico" placeholder=" ")
+                                                label.m-formGroup__label(for="register_form_billing_ico") IČO
+                                                span.m-formGroup__error Neplatné IČO
+                                                span.m-formGroup__success
+                                                
+                                            .o-form__group.m-formGroup
+                                                input.m-formGroup__input(type="text" name="register_form_billing_dic" id="register_form_billing_dic" autocomplete="dic" placeholder=" ")
+                                                label.m-formGroup__label(for="register_form_billing_dic") DIČ #[span.m-formGroup__muted (nepovinné)]
+                                                span.m-formGroup__error Neplatné DIČ
+                                                span.m-formGroup__success
+
+                                            .o-form__group.m-formGroup
+                                                input.m-formGroup__input(type="text" name="register_form_billing_address" id="register_form_billing_address" autocomplete="street-address" placeholder=" ")
+                                                label.m-formGroup__label(for="register_form_billing_address") Ulice
+                                                span.m-formGroup__error Neplatná ulice
+                                                span.m-formGroup__success
+
+                                            .o-form__group.m-formGroup
+                                                input.m-formGroup__input(type="text" name="register_form_billing_descriptive" id="register_form_billing_descriptive" autocomplete="descriptive-address" placeholder=" ")
+                                                label.m-formGroup__label(for="register_form_billing_descriptive") Číslo popisné
+                                                span.m-formGroup__error Neplatné číslo popisné
+                                                span.m-formGroup__success
+
+                                            .o-form__group.m-formGroup
+                                                input.m-formGroup__input(type="text" name="register_form_billing_localitye" id="register_form_billing_locality" autocomplete="address-level2" placeholder=" ")
+                                                label.m-formGroup__label(for="register_form_billing_locality") Město
+                                                span.m-formGroup__error Neplatné město
+                                                span.m-formGroup__success
+
+                                            .o-form__group.m-formGroup
+                                                input.m-formGroup__input(type="number" name="register_form_billing_postal_code" id="register_form_billing_postal_code" autocomplete="postal-code" placeholder=" ")
+                                                label.m-formGroup__label(for="register_form_billing_postal_code") PSČ
+                                                span.m-formGroup__error Neplatné PSČ
+                                                span.m-formGroup__success
+
+                                            select.m-formGroup__input(name="register_form_billing_postal_country" id="register_form_billing_postal_country" required)
+                                                option(value="cz") Česká republika
+                                                option(value="sk") Slovensko
+
+
+
+
                                 .o-form__divider.m-formDivider Ostatní
 
 
