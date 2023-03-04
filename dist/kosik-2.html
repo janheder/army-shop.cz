@@ -60,6 +60,13 @@
     <!-- jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery.min.js">\x3C/script>')</script>
+
+
+
+    <script type="text/javascript" src="https://www.ppl.cz/sources/map/main.js" async></script>
+<link rel="stylesheet" href="https://www.ppl.cz/sources/map/main.css">
+
+
   </head>
   <body>
     <div class="modal fade o-modal" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="modal-login" aria-hidden="true">
@@ -374,6 +381,9 @@
             <label class="m-formGroup__label" for="doprava3">ČESKÁ POŠTA - BALÍK DO RUKY           </label>
             <div class="m-formGroup__cartPrice">130 Kč</div>
           </div>
+
+          <div id="ppl-parcelshop-map"></div>
+          
           <h1 class="o-cartDeliveryForm__title">Výběr platby</h1>
           <div class="o-form__group m-formGroup -radiobutton -cart">
             <input class="m-formGroup__input" type="radio" name="platba" id="platba1" required disabled><span class="m-formGroup__radiobutton a-radiobutton"></span>
